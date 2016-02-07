@@ -32,8 +32,7 @@
                 </div>
                 <div class="user-area">
                     <div class="actions">
-                        <a href="create-account.html" class="promoted"><strong>Регистрация</strong></a>
-                        <a href="sign-in.html">Войти</a>
+                        <a href="submit.html" title="Разместить объявление своей квартиры бесплатно!" class="promoted"><strong>Разместить объявление</strong></a>
                     </div>
                 </div>
             </div>
@@ -53,18 +52,15 @@
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                     <ul class="nav navbar-nav">
-                        <li class="has-child">Помощь</a>
+                        <li class="has-child"><a href="#" title="Раздел помощи"> Помощь</a>
                             <ul class="child-navigation">
-                                <li><a href="index.html">Главная страница</a></li>
+                                <li><a href="landingpage.html">Почему мы?</a></li><!-- Почему работать с нами? -->
 								<li><a href="terms-conditions.html">Правила сайта</a></li>
 								<li><a href="faq.html">Справка</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav><!-- /.navbar collapse-->
-                <div class="add-your-property">
-                    <a href="submit.html" class="btn btn-green"><i class="fa fa-plus"></i><span class="text">Разместить объявление</span></a>
-                </div>
             </header><!-- /.navbar -->
         </div><!-- /.container -->
     </div><!-- /.navigation -->
@@ -86,46 +82,55 @@
                 <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
                     <form role="form" id="form-create-account" method="post" >
                     <div class="center">
-                        <figure class="note">Если у вас уже есть аккаунт, нажмите кнопку <a href="sign-in.html">Войти</a></figure>
+                        <figure class="note">Если у вас уже есть аккаунт, нажмите кнопку &nbsp;<a href="sign-in.html"><strong><ins>Войти</ins></strong></a></figure>
                     </div>
 
                         <hr>
                         <div class="form-group">
                             <label for="form-create-account-full-name">ФИО:</label>
-                            <input type="text" class="form-control" id="form-create-account-full-name" required>
+                            <input type="text" class="form-control" id="form-create-account-full-name" title="Укажите ФИО" required>
                         </div><!-- /.form-group -->
                         <div class="form-group">
                             <label for="form-create-account-email">Email:</label>
-                            <input type="email" class="form-control" id="form-create-account-email" required>
+                            <input type="email" class="form-control" id="form-create-account-email" title="Укажите Ваш адрес электронной почты" required>
                         </div><!-- /.form-group -->
 						<div class="form-group">
                             <label for="form-create-agency-phone">Номер телефона:</label>
-                            <input type="tel" class="form-control" id="form-create-agency-phone" required>
+                            <input type="tel" class="form-control" id="form-create-agency-phone" title="Укажите Ваш номер телефона" required>
                         </div><!-- /.form-group -->
 
                         <div class="form-group">
                             <label for="form-create-account-password">Пароль:</label>
-                            <input type="password" class="form-control" id="form-create-account-password" required>
+                            <input type="password" class="form-control" id="form-create-account-password" title="Минимальная длина пароля 8 символов" required>
                         </div><!-- /.form-group -->
                         <div class="form-group">
                             <label for="form-create-account-confirm-password">Подтверждение пароля:</label>
-                            <input type="password" class="form-control" id="form-create-account-confirm-password" required>
+                            <input type="password" class="form-control" id="form-create-account-confirm-password" title="Подтвердите введёный пароль" required>
                         </div><!-- /.form-group -->
                         <div class="checkbox pull-left">
                             <label>
-                                <input type="checkbox" id="account-type-accept" name="account-accept">Согласен с правилами
+                                <input type="checkbox" id="account-type-accept" name="account-accept"> Согласен с правилами
                             </label>
                         </div>
                         <div class="form-group clearfix">
-                            <button type="submit" class="btn pull-right btn-green" id="account-submit"> Регистрация </button>
+                            <button type="submit" class="btn pull-right btn-success" id="account-submit" title="Зарегистрироваться на сайте">&nbsp; &nbsp; Регистрация &nbsp; &nbsp;</button> <!-- CZ регистрация -->
                         </div><!-- /.form-group -->
                     </form>
+					<div class="center">
+						<figure class="note"><i class="fa fa-lock"></i>&nbsp; Ваши данные ни при каких обстоятельствах не будут переданы третьим лицам</figure>
+					</div>
                     <hr>
                     <div class="center">
                         <figure class="note">Нажимая кнопку  “Регистрация” вы принимаете <a href="terms-conditions.html">Правила нашего сайта</a></figure>
                     </div>
                 </div>
             </div><!-- /.row -->
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
         </div><!-- /.container -->
     </div>
     <!-- end Page Content -->
@@ -135,7 +140,7 @@
             <section id="footer-copyright">
                 <div class="container">
                     <span>RADEXO Copyright © 2015. All Rights Reserved.</span>
-                    <span class="pull-right"><a href="#page-top" class="roll">Вернуться наверх страницы</a></span>
+                    <span class="pull-right"><a href="#page-top" class="roll"><i class="fa fa-arrow-up">&nbsp; вернуться</i></a></span>
                 </div>
             </section>
         </div><!-- /.inner -->

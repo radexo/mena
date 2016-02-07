@@ -52,11 +52,15 @@
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                     <ul class="nav navbar-nav">
-					                        <li><a href="sign-in.html" title="Войти с помощью Вашего аккаунта">Войти &nbsp; </a>
+                        <li class="has-child"><a href="#" title="Основное личное меню пользователя"><i class="fa fa-user fa-fw"></i>&nbsp;Личный кабинет</a>
+                            <ul class="child-navigation">
+								<li><a href="#" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="badge-red" align="right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
+								<li><a href="#" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
+                                <li><a href="#" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>&nbsp; Оплата</a></li>
+								<li><a href="#" title="Настройки пользователя и сайта"><i class="fa fa-cog"></i>&nbsp; Настройки</a>
+                                <li><a href="index.html" title="Обязательно зайдите завтра проверить новые сообщения!"><i class="fa fa-sign-out"></i>&nbsp;Выход</a></li>
+                            </ul>
                         </li>
-
-					    <li class="activ"><a href="registration.html" title="Пройти быструю регистрацию"><strong>&nbsp;Регистрация</strong></a>
-						</li>
                     </ul>
                 </nav><!-- /.navbar collapse-->
                 <div class="add-your-property">
@@ -122,9 +126,8 @@
         <div class="search-box-inner">
             <div class="container">
                 <div class="search-box map">
-<br>
-
-                   <form role="form" id="form-map-sale" class="form-map form-search clearfix">
+					<form role="form" id="form-map-sale" class="form-map form-search clearfix">
+					</br>
                         <div class="row">
                             <div class="col-md-2 col-sm-4">
                                 <div class="form-group">
