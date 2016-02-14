@@ -896,11 +896,11 @@ ul.list-links li a:hover {
     margin-top: 0;
 }
 #page-footer .inner #footer-main {
-    background-color: #f3f3f3;
+    background-color: #ebeced;
     padding: 40px 0;
 }
 #page-footer .inner #footer-copyright {
-    background-color: #073855;
+    background-color: #464d54;
     color: #fff;
     display: table;
     padding: 20px 0;
@@ -1338,7 +1338,7 @@ ul.list-links li a:hover {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 2px solid #f3f3f3;
+  border: 5px solid #13B0EC;
   display: table;
   width: 100%;
   height: 100%;
@@ -1750,6 +1750,10 @@ ul.list-links li a:hover {
   margin: inherit;
   left: initial;
 }
+.display-lines .property .ribbon-2 {
+  margin: inherit;
+  left: initial;
+}
 
 /****
   E
@@ -1867,7 +1871,7 @@ ul.list-links li a:hover {
   padding-bottom: 10px;
 }
 .feature-box .icon {
-  background-color: #1396e2;
+  background-color: #607d8b;
   height: 60px;
   left: -2px;
   padding: 20px;
@@ -1881,7 +1885,7 @@ ul.list-links li a:hover {
   height: 0px;
   border-style: solid;
   border-width: 0 8px 8px 0;
-  border-color: transparent #1396e2 transparent transparent;
+  border-color: transparent #607d8b transparent transparent;
   position: absolute;
   right: 0;
   width: 0px;
@@ -2751,6 +2755,10 @@ ul.list-links li a:hover {
   top: 15px;
   bottom: inherit;
 }
+.property.masonry .property-image .ribbon-2 {
+  top: 15px;
+  bottom: inherit;
+}
 
 .property-carousel .property-slide {
   position: relative;
@@ -2958,7 +2966,7 @@ ul.list-links li a:hover {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #1396e2;
+  background-color: #31693E;
   color: #fff;
   font-weight: bold;
   font-size: 12px;
@@ -2974,6 +2982,34 @@ ul.list-links li a:hover {
   bottom: inherit;
   left: inherit;
 }
+.ribbon-2 {
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-transform: translate3d(0, 0, 1px) rotate(45deg);
+  -ms-transform: translate3d(0, 0, 1px) rotate(45deg);
+  -webkit-transform: translate3d(0, 0, 1px) rotate(45deg);
+  transform: translate3d(0, 0, 1px) rotate(45deg);
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #3C6D8B;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px;
+  position: absolute;
+  z-index: 3;
+  right: -30px;
+  top: 15px;
+  width: 120px;
+  text-align: center;
+  margin: auto;
+  height: 30px;
+  bottom: inherit;
+  left: inherit;
+}
+
 
 /****
   S
@@ -3498,7 +3534,14 @@ ul.list-links li a:hover {
 }
 .tag.price {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-  background-color: #1396e2;
+  background-color: #78909c;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.tag.title-action {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: rgba(224, 224, 224, 0.3);
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -5030,6 +5073,13 @@ body, html {
   }
 
   .ribbon {
+    width: 120px;
+    height: 25px;
+    bottom: inherit;
+    font-size: 11px;
+    padding: 4px;
+  }
+  .ribbon-2 {
     width: 120px;
     height: 25px;
     bottom: inherit;
