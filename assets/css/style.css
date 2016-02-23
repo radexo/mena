@@ -1338,7 +1338,7 @@ ul.list-links li a:hover {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 5px solid #13B0EC;
+  border: 5px solid #3C6D8B;
   display: table;
   width: 100%;
   height: 100%;
@@ -4159,9 +4159,29 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
 .btn.btn-white, select.btn-white {
   background-color: #fff;
   color: #00B0FF;
+  border: 1px solid #F3F3F3;
+  font-size: 12px;
+  outline: none !important;
+  padding: 7px 25px 7px 25px;
+  width: auto;
 }
 .btn.btn-white:hover, select.btn-white:hover {
-  background-color: #40C4FF;
+  background-color: #F5f5f5;
+  border: 1px solid;
+}
+.btn.btn-white2, select.btn-white {
+  background-color: #fff;
+  color: #00B0FF;
+  border: 1px solid;
+  font-size: 12px;
+  outline: none !important;
+  padding: 7px 25px 7px 25px;
+  width: auto;
+}
+.btn.btn-white2:hover, select.btn-white:hover {
+  background-color: #00B0FF;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .btn.btn-grey-dark, select.btn-grey-dark {
   background-color: #2a2a2a;
