@@ -4746,10 +4746,10 @@ form label.error:before {
   width: 100%;
 }
 .search-box .form-map input[type="text"]:hover, .search-box .form-map input[type="email"]:hover, .search-box .form-map input[type="search"]:hover, .search-box .form-map input[type="password"]:hover, .search-box .form-map input[type="number"]:hover, .search-box .form-map textarea:hover, .search-box .form-map select:hover, .search-box .form-map .selectpicker:hover, .search-box .form-map .price-range:hover {
-  background-color: #062f47;
+  background-color: #b0bec5;
 }
 .search-box .form-map .selectpicker .caret:after {
-  color: #eeeeee;
+  color: #81d4fa;
 }
 .search-box .form-map .price-range {
   -moz-transition: 0.3s;

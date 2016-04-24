@@ -396,13 +396,23 @@
                             <header><h3>Поиск</h3></header>
                             <form role="form" id="form-sidebar" class="form-search" action="properties-listing.html">
                                 <div class="form-group">
+                                    <select name="district">
+										<option value="0">Обмен</option>
+                                        <option value="1">Обмен/продажа</option>
+                                    </select>
+                                </div><!-- /.form-group -->						
+                                <div class="form-group">
                                     <select name="city">
+                                        <option value="">Город</option>						
                                         <option value="1">Москва</option>
+                                        <option value="2">Московская область</option>
+                                        <option value="3">Новая Москва</option>
                                     </select>
                                 </div><!-- /.form-group -->
                                 <div class="form-group">
                                     <select name="district">
                                         <option value="">Район</option>
+										<option value="0">Все районы</option>
                                         <option value="1">ЦАО</option>
                                         <option value="2">ЗАО</option>
                                         <option value="3">ЮАО</option>
@@ -413,10 +423,10 @@
                                 <div class="form-group">
                                     <select name="property-type">
                                         <option value="">Тип жилья</option>
-                                        <option value="1">Квартира</option>
-                                        <option value="2">Частный дом</option>
-                                        <option value="3">Коттедж</option>
-                                        <option value="4">Дача</option>
+                                        <option value="1">Комната</option>
+                                        <option value="2">Квартира</option>
+                                        <option value="3">Частный дом</option>
+                                        <option value="4">Новостройки</option>
                                     </select>
                                 </div><!-- /.form-group -->
 								<div class="form-group">
@@ -438,6 +448,23 @@
                                         <option value="4">110 +</option>
                                     </select>
                                 </div><!-- /.form-group -->
+								<p>Критерии обмена</P>
+								<div class="form-group">
+                                    <select name="form-sale-area">
+                                        <option value="">Обмен на</option>
+                                        <option value="1">На увеличение</option>
+                                        <option value="2">На уменьшение</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+								<div class="form-group">
+                                    <select name="form-sale-area">
+                                        <option value="">Район обмена</option>
+                                        <option value="1">В другом районе</option>
+                                        <option value="2">В своём районе</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+
+							
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-default">Искать</button>
                                 </div><!-- /.form-group -->
