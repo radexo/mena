@@ -129,39 +129,58 @@
                                                         </div><!-- /.col-md-6 -->
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="submit-property-type">Этаж</label>
+                                                                <label for="submit-room">Количество комнат</label>
+                                                                <select name="type" id="submit-room" required>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="1">3</option>
+                                                                    <option value="2">4+</option>																	
+                                                                </select>
+															</div>
+                                                        </div><!-- /.col-md-6 -->
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-roof">Высота потолков</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="submit-roof" name="roof" pattern="\d*">
+                                                                    <span class="input-group-addon">м</span>
+                                                                </div>
+                                                            </div><!-- /.form-group -->
+                                                        </div><!-- /.col-md-6 -->																												
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-level">Этаж</label>
 																<div class="input-group">
-                                                                <input type="text" class="form-control" id="submit-Beds" name="Beds" pattern="\d*" required>
+                                                                <input type="text" class="form-control" id="submit-level" name="level" pattern="\d*" required>
 																</div>
                                                             </div><!-- /.form-group -->
                                                         </div><!-- /.col-md-6 -->
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="submit-status">Этажность дома</label>
+                                                                <label for="submit-levels">Этажность дома</label>
 																<div class="input-group">
-                                                                <input type="text" class="form-control" id="submit-Beds" name="Beds" pattern="\d*" required>
+                                                                <input type="text" class="form-control" id="submit-levels" name="levels" pattern="\d*" required>
 																</div>
                                                             </div><!-- /.form-group -->
                                                         </div><!-- /.col-md-6 -->	
-														
                                                     </div><!-- /.row -->
 													</br>
 													<p> Площадь: </p>
                                                     <div class="row">
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="submit-Beds">Общая</label>
+                                                                <label for="submit-area">Общая</label>
 																<div class="input-group">
-                                                                <input type="text" class="form-control" id="submit-Beds" name="Beds" pattern="\d*" required>
+                                                                <input type="text" class="form-control" id="submit-area" name="Area" pattern="\d*" required>
                                                                 <span class="input-group-addon">м<sup>2</sup></span>
 																</div>
                                                            </div><!-- /.form-group -->
                                                         </div><!-- /.col-md-6 -->
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="submit-Baths">Жилая</label>
+                                                                <label for="submit-beds">Жилая</label>
 																<div class="input-group">
-                                                                <input type="text" class="form-control" id="submit-Baths" name="Baths" pattern="\d*" required>
+                                                                <input type="text" class="form-control" id="submit-Beds" name="Beds" pattern="\d*" required>
                                                                 <span class="input-group-addon">м<sup>2</sup></span>
 																</div>
 															</div><!-- /.form-group -->
@@ -170,17 +189,17 @@
                                                     <div class="row">
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="submit-area">Кухня</label>
+                                                                <label for="submit-kitchen">Кухня</label>
                                                                 <div class="input-group">
-                                                                    <input type="text" class="form-control" id="submit-area" name="area" pattern="\d*" required>
+                                                                    <input type="text" class="form-control" id="submit-kitchen" name="Kitchen" pattern="\d*" required>
                                                                     <span class="input-group-addon">м<sup>2</sup></span>
                                                                 </div>
                                                             </div><!-- /.form-group -->
                                                         </div><!-- /.col-md-6 -->
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
-                                                                <label for="submit-status">Сан. узел</label>
-                                                                <select name="type" id="submit-status">
+                                                                <label for="submit-Baths">Сан. узел</label>
+                                                                <select name="type" id="submit-Baths">
                                                                     <option value="1">Совмещенный</option>
                                                                     <option value="2">Раздельный</option>
                                                                 </select>
