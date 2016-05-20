@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ThemeStarz">
+    <meta name="author" content="Mailbox Mena">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="assets/css/jquery.slider.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/fileinput.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    <title>Mena | My Properties</title>
+    <title>Mena | Mail detail</title>
 
 </head>
 
-<body class="page-sub-page page-my-properties page-account" id="page-top">
+<body class="page-sub-page page-profile page-account" id="page-top">
 <!-- Wrapper -->
 <div class="wrapper">
     <!-- Navigation -->
@@ -54,9 +55,9 @@
                     <ul class="nav navbar-nav">
                         <li class="has-child"><a href="#" title="Основное личное меню пользователя"><i class="fa fa-user fa-fw"></i>&nbsp;Личный кабинет</a>
                             <ul class="child-navigation">
-                              <li><a href="mailbox.html" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="label label-danger pull-right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
-								                <li><a href="my-properties.html" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
-								                <li><a href="profile.html" title="Настройки пользователя и сайта"><i class="fa fa-cogs"></i>&nbsp; Настройки</a>
+                              <li><a href="#" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="label label-danger pull-right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
+								                <li><a href="#" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
+								                <li><a href="#" title="Настройки пользователя и сайта"><i class="fa fa-cogs"></i>&nbsp; Настройки</a>
                                 <li><a href="index.html" title="Обязательно зайдите завтра проверить новые сообщения!"><i class="fa fa-sign-out"></i>&nbsp;Выход</a></li>
                             </ul>
                         </li>
@@ -72,8 +73,8 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Аккаунт</a></li>
-                <li class="active">Мои объявления</li>
+                <li><a href="#">Сообщения</a></li>
+                <li class="active">Подробнее</li>
             </ol>
         </div>
         <!-- end Breadcrumb -->
@@ -83,7 +84,7 @@
             <!-- sidebar -->
             <div class="col-md-3 col-sm-2">
                 <section id="sidebar">
-                    <header><h3>Личный кабинет</h3></header>
+                    <header><h2><div class="text-muted">Личный кабинет</div></h2></header>
                     <aside>
                         <ul class="sidebar-navigation">
                         <style>
@@ -91,64 +92,102 @@
                           list-style-type: none; /* СТИЛЬ НУМЕРОВАННОГО СПИСКА */
                         }
                         </style>
-                            <li><a href="mailbox.html"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a></li>
-                            <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Объявления</span></a>
-                              <ol>
-                                <li class="active"><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Мои объявления</span></a>
-                                <li><a href="bookmarked.html"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
-                                <li><a href="bookmarked-list.html"><i class="fa fa-list-ul" aria-hidden="true"></i></i><span>Избранное список</span></a></li>
-                              </ol>
+                            <li class=""><a href="mailbox.html"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
+                                <ol>
+                                    <li class="active"><a href="mailbox-2.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
+                                    <li><a href="mailbox-test.html"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><span>Исходящие</span></a></li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i><span>Удалёные </a></li>
+                                </ol>
                             </li>
+                            <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Мои объявления</span></a></li>
                             <li><a href="profile.html"><i class="fa fa-cogs" aria-hidden="true"></i></i><span>Настройки</span></a></li>
                         </ul>
                     </aside>
                 </section><!-- /#sidebar -->
             </div><!-- /.col-md-3 -->
             <!-- end Sidebar -->
-                <!-- My Properties -->
-                <div class="col-md-9 col-sm-10">
-                    <section id="my-properties">
-                        <header><h1>Список моих объявлений</h1></header>
-                        <div class="my-properties">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Объявление</th>
-                                        <th></th>
-                                        <th>Дата добавления</th>
-                                        <th>Просмотры</th>
-                                        <th>Действие</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-04.jpg"></a>
-                                        </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>2х, м.Фили</h2></a>
-                                            <figure>ул. Большая Филёвская, 18</figure>
-                                            <div class="tag price">5 800 000</div>
-                                        </div>
-                                        </td>
-                                        <td>20.01.2016</td>
-                                        <td>236</td>
-                                        <td class="actions">
-                                            <a href="#" class="edit"><i class="fa fa-pencil" title="Редактировать объявление"></i>Редактировать</a>
-                                            <a href="#"><i class="delete fa fa-trash-o" title="Удалить объявлени"></i></a>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div><!-- /.table-responsive -->
-                        </div><!-- /.my-properties -->
-                    </section><!-- /#my-properties -->
-                </div><!-- /.col-md-9 -->
-                <!-- end My Properties -->
+
+                <!-- Message -->
+                <div class="col-lg-9 col-sm-9">
+                <div class="mail-box-header">
+                    <div class="pull-right">
+                        <a href="mail_compose.html" class="btn btn-white2-sm" title="Ответить"><i class="fa fa-reply"></i> Ответить</a>
+                        <a href="#" class="btn btn-white-red"title="Добавить в избранное"><i class="fa fa-heart-o"></i> </a>
+                        <a href="mailbox.html" class="btn btn-white-grey" title="Удалить"><i class="fa fa-trash-o"></i> </a>
+                        <a href="#" class="btn btn-white-grey" title="Пожаловаться"><i class="fa fa-bug"></i> </a>
+                    </div>
+                    <h3>
+                        Подробности сообщения
+                    </h3>
+                    <div class="mail-tools">
+                        <h4>
+                          <span class="font-noraml">От: </span>Сергей Бегальцев
+                        </h4>
+                        <h5>
+                            <span class="pull-right font-noraml">10:15 11.05.2016</span>
+                            <span class="font-noraml">Объявление: &nbsp;</span> <a href="property-detail.html" title="Открыть объявление адресата"><i class="fa fa-map-marker"></i> ул. Шоссе Энтузиастов, д.147</i> </a>
+                        </h5>
+                    </div>
+                </div>
+                <hr>
+                    <div class="mail-box">
+
+
+                    <div class="mail-body">
+                            <p>
+                            Добрый день.
+                            <br/>
+                            </p>
+                            <p>
+                            Хотел узнать подробнее по вашей квартире
+                            </p>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            Sed fringilla nibh est, sit amet consectetur justo imperdiet vel. Aliquam rhoncus, sem pulvinar facilisis elementum, nisl magna auctor massa, sodales commodo nibh nibh quis quam. Vivamus sit amet lacinia augue. Phasellus pulvinar, magna vitae posuere aliquet, ipsum neque lobortis quam, pharetra feugiat ex lectus nec lectus. Mauris ut felis eros. Quisque porta rutrum orci nec maximus. Aenean rhoncus sollicitudin semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <hr>
+                    </div>
+                        <div class="mail-attachment">
+                            <div class="attachment">
+                                    <div class="file">
+                                        <a href="#">
+                                            <div class="icon">
+                                                <i class="fa fa-file"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                img1.jpg
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="file">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img alt="image" src="assets\img\icons\Circled User Male-100.png">
+                                            </div>
+                                            <div class="file-name">
+                                                user.png
+                                            </div>
+                                        </a>
+                                    </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            </div>
+                            <div class="mail-body text-right">
+                                    <a class="btn btn-white2" href="mail_compose.html"><i class="fa fa-reply"></i>&nbsp; Ответить на сообщение</a>
+                                    <a class="btn btn-white-grey" href="#"><i class="fa fa-arrow-right"></i> Заключить сделку</a>
+                            </div>
+                          </br>
+                            <div class="clearfix"></div>
+
+                    </div>
+                </div>
+                <!-- end Message -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div>
+
     <!-- end Page Content -->
     <!-- Page Footer -->
     <footer id="page-footer">
@@ -211,8 +250,12 @@
 <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
 <script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/fileinput.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <!--[if gt IE 8]>
 <script type="text/javascript" src="assets/js/ie.js"></script>

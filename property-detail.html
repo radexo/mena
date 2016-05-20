@@ -54,10 +54,9 @@
                     <ul class="nav navbar-nav">
                         <li class="has-child"><a href="#" title="Основное личное меню пользователя"><i class="fa fa-user fa-fw"></i>&nbsp;Личный кабинет</a>
                             <ul class="child-navigation">
-								<li><a href="#" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="badge-red" align="right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
-								<li><a href="#" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
-                                <li><a href="#" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>&nbsp; Оплата</a></li>
-								<li><a href="#" title="Настройки пользователя и сайта"><i class="fa fa-cog"></i>&nbsp; Настройки</a>
+                              <li><a href="mailbox.html" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="label label-danger pull-right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
+								                <li><a href="my-properties.html" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
+								                <li><a href="profile.html" title="Настройки пользователя и сайта"><i class="fa fa-cogs"></i>&nbsp; Настройки</a>
                                 <li><a href="index.html" title="Обязательно зайдите завтра проверить новые сообщения!"><i class="fa fa-sign-out"></i>&nbsp;Выход</a></li>
                             </ul>
                         </li>
@@ -67,7 +66,7 @@
         </div><!-- /.container -->
     </div><!-- /.navigation -->
     <!-- end Navigation -->
-	
+
     <!-- Page Content -->
     <div id="page-content">
         <!-- Breadcrumb -->
@@ -129,14 +128,18 @@
                                             <dd>ул.Шоссе Энтузиастов, 147</dd>
 										<dt>Метро:</dt>
 											<dd>Шоссе Энтузиастов</dd>
-                                        <dt>Площадь:</dt>
+                                        <dt>Общая площадь:</dt>
                                             <dd>70 м<sup>2</sup></dd>
                                         <dt>Жилая:</dt>
-                                            <dd>49</dd>
+                                            <dd>49 м<sup>2</sup></dd>
                                         <dt>Кухня:</dt>
-                                            <dd>9</dd>
+                                            <dd>9 м<sup>2</sup></dd>
                                         <dt>Сан.узел:</dt>
-                                            <dd>3/6</dd>
+                                            <dd>Раздельный</dd>
+                                        <dt>Высота потолков</dt>
+                                            <dd>2.54 м</dd>
+                                        <dt>Этаж</dt>
+                                            <dd>3/9</dd>
                                         <dt>Цена:</dt>
                                             <dd><span class="tag price">8 380 000</span></dd>
                                     </dl>
@@ -154,7 +157,7 @@
                                 <section id="description">
                                     <header><h2>Описание и комментарий</h2></header>
                                     <p>
-										Обменяю 2-ку на 3-ку в ЖК Гусарская Баллада по улице Кутузова с моей доплатой. 
+										Обменяю 2-ку на 3-ку в ЖК Гусарская Баллада по улице Кутузова с моей доплатой.
 										Лоджия 6кв + курилка. Выполнен отличный ремонт, 1 собственник, более 3-х лет.
 									</p>
 									<p>
@@ -183,7 +186,7 @@
                                         <form role="form" id="form-contact-agent" method="post"  class="clearfix">
                                             <div class="form-group">
                                                 <label for="form-contact-agent-message">Вам понравилось? Есть вопросы? Напишите письмо<em>*</em></label>
-                                                <textarea class="form-control" id="form-contact-agent-message" rows="5" name="form-contact-agent-message" required></textarea>
+                                                <textarea class="form-control" id="form-contact-agent-message" rows="5" name="form-contact-agent-message" placeholder="Добрый день! Мне понравился ваш объект..." required></textarea>
                                             </div><!-- /.form-group -->
                                             <div class="form-group">
                                                 <button type="submit" class="btn pull-right btn-white2" id="form-contact-agent-submit">Отправить сообщение</button>
@@ -193,12 +196,12 @@
                                     </div><!-- /.agent-form -->
 								</div>
                             </div><!-- /.col-md-5 -->
-							
-							
+
+
 							<div class="col-md-8">
 							</br></br></br></br></br>
 							</div>
-							
+
 							<div class="col-md-8 col-sm-12">
 						        <section id="property-map">
                                     <header><h2>Карта</h2></header>
@@ -207,11 +210,11 @@
                                     </div>
                                 </section><!-- /#property-map -->
                             </div><!-- /.col-md-8 -->
-							
+
 							<div class="col-md-8">
 							</br></br></br></br></br>
 							</div>
-							
+
                             <div class="col-md-12 col-sm-12">
                                 <hr class="thick">
 								<hr class="thick">
@@ -339,10 +342,10 @@
 										<option value="0">Обмен</option>
                                         <option value="1">Обмен/продажа</option>
                                     </select>
-                                </div><!-- /.form-group -->						
+                                </div><!-- /.form-group -->
                                 <div class="form-group">
                                     <select name="city">
-                                        <option value="">Город</option>						
+                                        <option value="">Город</option>
                                         <option value="1">Москва</option>
                                         <option value="2">Московская область</option>
                                         <option value="3">Новая Москва</option>
@@ -497,7 +500,7 @@
                                 <a href="#">mena@example.com</a>
                             </article>
                         </div><!-- /.col-sm-3 -->
-                        <div class="col-md-3 col-sm-3">						
+                        <div class="col-md-3 col-sm-3">
                             <article>
                                 <h3>Меню</h3>
                                 <ul class="list-unstyled list-links">

@@ -55,10 +55,9 @@
                     <ul class="nav navbar-nav">
                         <li class="has-child"><a href="#" title="Основное личное меню пользователя"><i class="fa fa-user fa-fw"></i>&nbsp;Личный кабинет</a>
                             <ul class="child-navigation">
-								<li><a href="#" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="badge-red" align="right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
-								<li><a href="#" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
-                                <li><a href="#" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>&nbsp; Оплата</a></li>
-								<li><a href="#" title="Настройки пользователя и сайта"><i class="fa fa-cog"></i>&nbsp; Настройки</a>
+                              <li><a href="mailbox.html" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="label label-danger pull-right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
+								                <li><a href="my-properties.html" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
+								                <li><a href="profile.html" title="Настройки пользователя и сайта"><i class="fa fa-cogs"></i>&nbsp; Настройки</a>
                                 <li><a href="index.html" title="Обязательно зайдите завтра проверить новые сообщения!"><i class="fa fa-sign-out"></i>&nbsp;Выход</a></li>
                             </ul>
                         </li>
@@ -112,7 +111,7 @@
                                                         <select name="type" id="submit-location">
                                                             <option value="1">Москва</option>
                                                             <option value="2">Московская область</option>
-                                                            <option value="2">Новая Москва</option>														
+                                                            <option value="2">Новая Москва</option>
                                                         </select>
                                                     </div>
                                                     <div class="row">
@@ -134,7 +133,7 @@
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
                                                                     <option value="1">3</option>
-                                                                    <option value="2">4+</option>																	
+                                                                    <option value="2">4+</option>
                                                                 </select>
 															</div>
                                                         </div><!-- /.col-md-6 -->
@@ -146,12 +145,12 @@
                                                                     <span class="input-group-addon">м</span>
                                                                 </div>
                                                             </div><!-- /.form-group -->
-                                                        </div><!-- /.col-md-6 -->																												
+                                                        </div><!-- /.col-md-6 -->
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
                                                                 <label for="submit-level">Этаж</label>
 																<div class="input-group">
-                                                                <input type="text" class="form-control" id="submit-level" name="level" pattern="\d*" required>
+                                                                <input type="text" class="form-control" id="submit-level" name="level" pattern="\d*">
 																</div>
                                                             </div><!-- /.form-group -->
                                                         </div><!-- /.col-md-6 -->
@@ -159,10 +158,10 @@
                                                             <div class="form-group">
                                                                 <label for="submit-levels">Этажность дома</label>
 																<div class="input-group">
-                                                                <input type="text" class="form-control" id="submit-levels" name="levels" pattern="\d*" required>
+                                                                <input type="text" class="form-control" id="submit-levels" name="levels" pattern="\d*">
 																</div>
                                                             </div><!-- /.form-group -->
-                                                        </div><!-- /.col-md-6 -->	
+                                                        </div><!-- /.col-md-6 -->
                                                     </div><!-- /.row -->
 													</br>
 													<p> Площадь: </p>
@@ -207,8 +206,8 @@
                                                         </div><!-- /.col-md-6 -->
 													</div> <!-- /.row -->
 												</section><!-- /#summary -->
-                                            </div><!-- /.col-md-6 -->										
-											
+                                            </div><!-- /.col-md-6 -->
+
                                             <div class="col-md-6 col-sm-6">
                                                 <section id="place-on-map">
                                                     <header class="section-title">
@@ -258,19 +257,19 @@
                         <div class="col-md-9 col-sm-9">
                             <section id="submit-form">
                                     <div class="row">
-                                            <div class="col-md-6 col-sm-6">									
+                                            <div class="col-md-6 col-sm-6">
 												<section id="wish-list">
-												<header><h2>Желаемая цель обмена</h2></header>									
+												<header><h2>Желаемая цель обмена</h2></header>
                                                     <div class="row">
                                                         <div class="col-md-12 col-sm-12">
                                                             <div class="form-group">
                                                                 <label for="submit-status">Статус</label>
-                                                                <select name="type" id="submit-status">
+                                                                <select name="type" id="submit-status" required>
                                                                     <option value="1">Обмен</option>
                                                                     <option value="2">Обмен продажа</option>
                                                                 </select>
                                                             </div><!-- /.form-group -->
-                                                        </div><!-- /.col-md-6 -->													
+                                                        </div><!-- /.col-md-6 -->
                                                         <div class="col-md-6 col-sm-6">
                                                             <div class="form-group">
                                                                 <label for="submit-status">Цель обмена</label>
@@ -298,8 +297,8 @@
 																</div>
 															</div><!-- /.form-group -->
 														</div>
-                                                    </div><!-- /.row -->														
-													
+                                                    </div><!-- /.row -->
+
 													<div>
 														<label for="account-agency">
 														Обмен с доплатой <i class="fa fa-question-circle tool-tip"  data-toggle="tooltip" data-placement="right" title="Укажите если хотите получить денежную доплату при обмене"></i></label>
@@ -313,7 +312,7 @@
 															</div>
 														</div>
 														<div class="col-md-9 col-sm-9">
-														<section id="agency">												
+														<section id="agency">
 															<div class="form-group">
 																<div class="input-group">
 																	<span class="input-group-addon"><i class="fa fa-rub"></i></span>
@@ -323,11 +322,11 @@
 														</section>
 														</div>
 													</div>
-													
+
                                                 </section><!-- /#wish-list -->
-                                            </div><!-- /.col-md-6 -->																						
+                                            </div><!-- /.col-md-6 -->
                                     </div><!-- /.row -->
-							<hr>		
+							<hr>
                             </section>
                         </div><!-- /.col-md-9 -->
                         <div class="col-md-3 col-sm-3">
@@ -342,11 +341,11 @@
                             </aside><!-- /.submit-step -->
                         </div><!-- /.col-md-3 -->
                     </div>
-                </div><!-- /.row -->								
+                </div><!-- /.row -->
                 <div class="row">
                     <div class="block clearfix">
                         <div class="col-md-9 col-sm-9">
-                            <section id="submit-form">								
+                            <section id="submit-form">
                                 <section class="block" id="gallery">
                                     <header><h2>Фотографии</h2></header>
                                     <div class="center">
@@ -370,8 +369,8 @@
                             </aside><!-- /.submit-step -->
                         </div><!-- /.col-md-3 -->
                     </div>
-                </div><!-- /.row -->								
-								
+                </div><!-- /.row -->
+
                 <div class="row">
                     <div class="block">
                         <div class="col-md-9 col-sm-9">
@@ -428,7 +427,7 @@
                                 <a href="#">mena@example.com</a>
                             </article>
                         </div><!-- /.col-sm-3 -->
-                        <div class="col-md-3 col-sm-3">						
+                        <div class="col-md-3 col-sm-3">
                             <article>
                                 <h3>Меню</h3>
                                 <ul class="list-unstyled list-links">

@@ -55,10 +55,9 @@
                     <ul class="nav navbar-nav">
                         <li class="has-child"><a href="#" title="Основное личное меню пользователя"><i class="fa fa-user fa-fw"></i>&nbsp;Личный кабинет</a>
                             <ul class="child-navigation">
-								<li><a href="#" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="badge-red" align="right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
-								<li><a href="#" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
-                                <li><a href="#" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>&nbsp; Оплата</a></li>
-								<li><a href="#" title="Настройки пользователя и сайта"><i class="fa fa-cog"></i>&nbsp; Настройки</a>
+                              <li><a href="mailbox.html" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="label label-danger pull-right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
+								                <li><a href="my-properties.html" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
+								                <li><a href="profile.html" title="Настройки пользователя и сайта"><i class="fa fa-cogs"></i>&nbsp; Настройки</a>
                                 <li><a href="index.html" title="Обязательно зайдите завтра проверить новые сообщения!"><i class="fa fa-sign-out"></i>&nbsp;Выход</a></li>
                             </ul>
                         </li>
@@ -88,10 +87,33 @@
                     <header><h3>Личный кабинет</h3></header>
                     <aside>
                         <ul class="sidebar-navigation">
-                            <li class="active"><a href="profile.html"><i class="fa fa-user"></i><span>Настройки</span></a></li>
-                            <li><a href="my-properties.html"><i class="fa fa-home"></i><span>Мои объявления</span></a></li>
-                            <li><a href="bookmarked.html"><i class="fa fa-heart"></i><span>Избранное</span></a></li>
-                            <li><a href="bookmarked-list.html"><i class="fa fa-heart"></i><span>Избранное список</span></a></li>							
+                        <style>
+                        ol {
+                          list-style-type: none; /* ДОБАВИТЬ В CSS СТИЛЬ НУМЕРОВАННОГО СПИСКА */
+                        }
+                        </style>
+                          <li><a href="mailbox.html"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
+                            <ol>
+                                <li><a href="mailbox-2.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
+                                <li><a href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><span>Исходящие</span></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
+                                <li><a href="#"><i class="fa fa-trash-o"></i><span>Удалёные </a></li>
+                            </ol>
+                          </li>
+                          <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Объявления</span></a>
+                            <ol>
+                              <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Мои объявления</span></a>
+                              <li><a href="bookmarked.html"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
+                              <li><a href="bookmarked-list.html"><i class="fa fa-list-ul" aria-hidden="true"></i></i><span>Избранное список</span></a></li>
+                            </ol>
+                          </li>
+                          <li><a href="#"><i class="fa fa-cogs"></i><span>Настройки</span></a>
+                            <ol>
+                              <li class="active"><a href="profile.html"><i class="fa fa-cog"></i><span>Мои настройки</span></a></li>
+                              <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i><span>Уведомления</span></a></li>
+                              <li><a href="price.html" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>&nbsp; Оплата</a></li>
+                            </ol>
+                          </li>
                         </ul>
                     </aside>
                 </section><!-- /#sidebar -->
@@ -242,7 +264,7 @@ Phasellus mollis imperdiet placerat. Sed ac turpis nisl. Mauris at ante mauris. 
                                 <a href="#">mena@example.com</a>
                             </article>
                         </div><!-- /.col-sm-3 -->
-                        <div class="col-md-3 col-sm-3">						
+                        <div class="col-md-3 col-sm-3">
                             <article>
                                 <h3>Меню</h3>
                                 <ul class="list-unstyled list-links">
