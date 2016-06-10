@@ -11,7 +11,7 @@ Assigned to:	RADEXO
 3. Universal Classes
 4. Header
 5. Footer
-6. Content 
+6. Content
 7. Responsive
 
 [Color codes]
@@ -1338,7 +1338,7 @@ ul.list-links li a:hover {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 5px solid #13B0EC;
+  border: 5px solid #3C6D8B;
   display: table;
   width: 100%;
   height: 100%;
@@ -4135,6 +4135,41 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
   -webkit-box-shadow: 0px 2px 2px transparent, inset 0px 2px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 2px transparent, inset 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
+/* Button size */
+.btn.btn-sm-2, select.btn-white {
+  font-size: 12px;
+  padding: 7px 25px 7px 25px;
+  width: auto;
+}
+.btn.btn-sm-3, select.btn-white {
+  font-size: 12px;
+  padding: 7px 35px 7px 35px;
+  width: auto;
+}
+.btn.btn-m-2, select.btn-white {
+  font-size: 12px;
+  padding: 7px 25px 7px 25px;
+  width: auto;
+}
+.btn.btn-m-22, select.btn-white {
+  font-size: 12px;
+  padding: 9px 25px 8px 25px;
+  width: auto;
+}
+.btn.btn-m-3, select.btn-white {
+  font-size: 14px;
+  padding: 7px 25px 7px 25px;
+  width: auto;
+}
+.btn.btn-m-4, select.btn-white {
+  font-size: 14px;
+  padding: 7px 35px 7px 35px;
+  width: auto;
+}
+
+/* Button color */
+
 .btn.btn-green, select.btn-green {
   background-color: #00cc33;
   color: #fff;
@@ -4159,9 +4194,107 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
 .btn.btn-white, select.btn-white {
   background-color: #fff;
   color: #00B0FF;
+  border: 1px solid #F3F3F3;
+  font-size: 12px;
+  outline: none !important;
+  padding: 7px 25px 7px 25px;
+  width: auto;
 }
 .btn.btn-white:hover, select.btn-white:hover {
-  background-color: #40C4FF;
+  background-color: #F5f5f5;
+  border: 1px solid;
+}
+.btn.btn-white-blue, select.btn-white {
+  background-color: #fff;
+  color: #00B0FF;
+  border: 1px solid #F3F3F3;
+  outline: none !important;
+  width: auto;
+}
+.btn.btn-white-blue:hover, select.btn-white:hover {
+  background-color: #F5f5f5;
+  border: 1px solid;
+}
+
+.btn.btn-white2, select.btn-white {
+  background-color: #fff;
+  color: #00B0FF;
+  border: 1px solid;
+  font-size: 12px;
+  outline: none !important;
+  padding: 7px 25px 7px 25px;
+  width: auto;
+}
+.btn.btn-white2:hover, select.btn-white:hover {
+  background-color: #00B0FF;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn.btn-white-3, select.btn-white {
+  background-color: #fff;
+  color: #00B0FF;
+  border: 1px solid;
+  outline: none !important;
+  width: auto;
+}
+.btn.btn-white-3:hover, select.btn-white:hover {
+  background-color: #00B0FF;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn.btn-white2-sm, select.btn-white {
+  background-color: #fff;
+  color: #00B0FF;
+  border: 1px solid;
+  font-size: 12px;
+  outline: none !important;
+  padding: 5px 10px 5px 10px;
+  width: auto;
+}
+.btn.btn-white2-sm:hover, select.btn-white:hover {
+  background-color: #00B0FF;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn.btn-white-grey, select.btn-white {
+  background-color: #fff;
+  color: #A4A4A4;
+  border: 1px solid;
+  font-size: 12px;
+  outline: none !important;
+  padding: 5px 10px 5px 10px;
+  width: auto;
+}
+.btn.btn-white-grey:hover, select.btn-white:hover {
+  background-color: #616161;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn.btn-white-grey-2, select.btn-white {
+  background-color: #fff;
+  color: #A4A4A4;
+  outline: none !important;
+  width: auto;
+  border: 1px solid #fff;
+}
+.btn.btn-white-grey-2:hover, select.btn-white:hover {
+  background-color: #fff;
+  color: #A4A4A4;
+  border: 1px solid #A4A4A4;
+}
+.btn.btn-white-red, select.btn-white {
+  background-color: #fff;
+  color: #A4A4A4;
+  border: 1px solid;
+  font-size: 12px;
+  outline: none !important;
+  padding: 5px 10px 5px 10px;
+  width: auto;
+}
+.btn.btn-white-red:hover, select.btn-white:hover {
+  background-color: #ed5565;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .btn.btn-grey-dark, select.btn-grey-dark {
   background-color: #2a2a2a;
@@ -4726,10 +4859,10 @@ form label.error:before {
   width: 100%;
 }
 .search-box .form-map input[type="text"]:hover, .search-box .form-map input[type="email"]:hover, .search-box .form-map input[type="search"]:hover, .search-box .form-map input[type="password"]:hover, .search-box .form-map input[type="number"]:hover, .search-box .form-map textarea:hover, .search-box .form-map select:hover, .search-box .form-map .selectpicker:hover, .search-box .form-map .price-range:hover {
-  background-color: #062f47;
+  background-color: #b0bec5;
 }
 .search-box .form-map .selectpicker .caret:after {
-  color: #eeeeee;
+  color: #81d4fa;
 }
 .search-box .form-map .price-range {
   -moz-transition: 0.3s;

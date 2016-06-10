@@ -32,7 +32,7 @@
                 </div>
                 <div class="user-area">
                     <div class="actions">
-                        <a href="submit.html" title="Разместить объявление своей квартиры бесплатно!" class="promoted"><strong>Разместить объявление</strong></a>
+                        <a href="registration.html" title="Пройти быструю регистрацию и разместить объявление своей квартиры бесплатно!" class="promoted"><strong>Разместить объявление</strong></a>
                     </div>
                 </div>
             </div>
@@ -52,15 +52,12 @@
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                     <ul class="nav navbar-nav">
-					                        <li><a href="sign-in.html" title="Войти с помощью Вашего аккаунта">Войти &nbsp; </a>
-                        </li>
-
-					    <li class="activ"><a href="registration.html" title="Пройти быструю регистрацию"><strong>&nbsp;Регистрация</strong></a>
+					    <li class="activ"><a href="sign-in.html" title="Войти на сайт или пройти быструю регистрацию"><strong>&nbsp;Войти</strong></a>
 						</li>
                     </ul>
                 </nav><!-- /.navbar collapse-->
                 <div class="add-your-property">
-                    <a href="submit.html" class="btn btn-green"><i class="fa fa-plus"></i><span class="text">Разместить объявление</span></a>
+                    <a href="registration.html" class="btn btn-green" title="Разместить объявление своей квартиры бесплатно!"><i class="fa fa-plus"></i><span class="text">Разместить объявление</span></a>
                 </div>
             </header><!-- /.navbar -->
         </div><!-- /.container -->
@@ -122,105 +119,72 @@
         <div class="search-box-inner">
             <div class="container">
                 <div class="search-box map">
-<br>
-
-                   <form role="form" id="form-map-sale" class="form-map form-search clearfix">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-4">
-                                <div class="form-group">
-                                    <select name="form-sale-city">
-                                        <option value="1">Москва</option>
-                                    </select>
-                                </div><!-- /.form-group -->
-                            </div>
-                            <div class="col-md-2 col-sm-4">
-                                <div class="form-group">
-                                    <select name="form-sale-district">
-                                        <option value="">Район</option>
-                                        <option value="1">ЦАО</option>
-                                        <option value="2">ЗАО</option>
-                                        <option value="3">ЮАО</option>
-                                        <option value="4">ВАО</option>
-                                        <option value="5">САО</option>
-                                    </select>
-                                </div><!-- /.form-group -->
-                            </div>
-                            <div class="col-md-2 col-sm-4">
-                                <div class="form-group">
-                                    <select name="form-sale-property-type">
-                                        <option value="">Тип жилья</option>
-                                        <option value="1">Квартира</option>
-                                        <option value="2">Частный дом</option>
-                                        <option value="3">Коттедж</option>
-                                        <option value="4">Дача</option>
-                                    </select>
-                                </div><!-- /.form-group -->
-                            </div>
-							<div class="col-md-2 col-sm-4">
-                                <div class="form-group">
-                                    <select name="form-sale-room">
-                                        <option value="">Кол-во комнат</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5+</option>
-                                    </select>
-                                </div><!-- /.form-group -->
-                            </div>
-                            <div class="col-md-2 col-sm-4">
-                                <div class="form-group">
-                                    <select name="form-sale-area">
-                                        <option value="">Площадь</option>
-                                        <option value="1">30-70 +</option>
-                                        <option value="2">70-90 +</option>
-                                        <option value="3">90-110 +</option>
-                                        <option value="4">110 +</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-4">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-default">Искать</button>
-                                </div><!-- /.form-group -->
-                            </div> 
+					<form role="form" id="form-map-sale" class="form-map form-search clearfix">
+					</br>
+          <div class="row">
+            <div class="col-md-1">
+            </div>
+              <div class="col-md-3 col-sm-4">
+                  <div class="form-group">
+                      <select name="form-sale-city">
+                          <option value="1">Москва</option>
+                          <option value="2">Новая Москва</option>
+                          <option value="3">Московская область</option>
+                      </select>
+                  </div><!-- /.form-group -->
+              </div>
+              <div class="col-md-4 col-sm-4">
+                  <div class="form-group">
+                      <select name="form-sale-property-type">
+                          <option value="">Тип жилья</option>
+                          <option value="1">Квартира</option>
+                          <option value="2">Комната</option>
+                          <option value="3">Частный дом</option>
+                      </select>
+                  </div><!-- /.form-group -->
+              </div>
+              <div class="col-md-3 col-sm-4">
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-default">Искать</button>
+                  </div><!-- /.form-group -->
+              </div>
 							<div class="col-md-12 col-sm-12">
 								<hr>
 							</div>
-							<div class="col-md-4 col-sm-4">
+              <div class="col-md-1">
+              </div>
+							<div class="col-md-3 col-sm-4">
 								<article>
 									<ul class="list-unstyled list-links">
-										<li><a href="properties-listing-lines.html" align="center">Однокомнатные квартиры</a></li>
-										<li><a href="properties-listing-lines.html"align="center">Двухкомнатные квартиры</a></li>
+										<li><a href="properties-listing-lines.html" align="center">Однокомнатные квартиры - 192</a></li>
+										<li><a href="properties-listing-lines.html"align="center">Двухкомнатные квартиры - 98</a></li>
 									</ul>
 								</article>
 							</div><!-- /.col-sm-3 -->
 							<div class="col-md-4 col-sm-4">
 								<article>
 									<ul class="list-unstyled list-links">
-										<li><a href="properties-listing-lines.html"align="center">Трехкомнатные квартиры</a></li>
-										<li><a href="properties-listing-lines.html"align="center">Четырёхкомнатные квартиры</a></li>
+										<li><a href="properties-listing-lines.html"align="center">Трехкомнатные квартиры - 67</a></li>
+										<li><a href="properties-listing-lines.html"align="center">Четыре и более комнат - 12</a></li>
 									</ul>
 								</article>
 							</div><!-- /.col-sm-3 -->
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-3 col-sm-4">
 								<article>
 									<ul class="list-unstyled list-links">
-										<li><a href="properties-listing-lines.html"align="center">Частные дома, коттеджи, таунхаусы</a></li>
-										<li><a href="properties-listing-lines.html"align="center">В других городах России</a></li>
+										<li><a href="properties-listing-lines.html"align="center">Частные дома - 35</a></li>
+										<li><a href="properties-listing-lines.html"align="center">Новостройки - (скоро)</a></li>
 									</ul>
 								</article>
 							</div><!-- /.col-sm-3 -->
 						</div>
-                    
+
                     </form><!-- /#form-map -->
                 </div><!-- /.search-box -->
             </div><!-- /.container -->
 			<br>
         </div><!-- /.search-box-inner -->
         <div class="background-image"><img class="opacity-20" src="assets/img/searchbox-bg.jpg"><br><br></div>
-
-
     </div>
     <!-- end Search Box -->
 
@@ -228,15 +192,15 @@
     <div id="page-content">
         <section id="our-services" class="block">
             <div class="container">
-                <header class="section-title"><h2>Обмен квартир</h2></header>
                 <div class="row">
-					<br>
+					          <br>
                     <div class="col-md-4 col-sm-4">
                         <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-folder"></i></figure>
+                            <figure class="icon"><i class="fa fa-bug" aria-hidden="true"></i></figure>
                             <aside class="description">
-                                <header><h3>Заголовок н3</h3></header>
-                                <p>Первая супер причина почему вы с нами! И она звучит так... С нами и только с нами</p><br>
+                                <header><h3>Безопасно</h3></header>
+                                <p>Без риэлторов, посредников и прочих! <br>
+                                  Вы общаетесь исключительно с собственниками напрямую</p><br>
                                 <a href="properties-listing.html" class="link-arrow">Подробнее</a>
 							</aside>
 							<br>
@@ -244,10 +208,10 @@
                     </div><!-- /.col-md-4 -->
                     <div class="col-md-4 col-sm-4">
                         <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-folder"></i></figure>
+                            <figure class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></figure>
                             <aside class="description">
-                                <header><h3>Заголовок н3</h3></header>
-                                <p>Вторая супер причина почему вы с нами! И она звучит так... А почему не с нами? Только с нами</p><br>
+                                <header><h3>Самостоятельно</h3></header>
+                                <p>Нашли, посмотрели, договорились. Мы поможем со всеми документами Без переплат и скрытых условий!</p><br>
                                 <a href="properties-listing.html" class="link-arrow">Подробнее</a>
                             </aside>
 							<br>
@@ -255,10 +219,11 @@
                     </div><!-- /.col-md-4 -->
                     <div class="col-md-4 col-sm-4">
                         <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-folder"></i></figure>
+                            <figure class="icon"><i class="fa fa-users" aria-hidden="true"></i></figure>
                             <aside class="description">
-                                <header><h3>Заголовок н3</h3></header>
-                                <p>Третья супер причина почему вы с нами! И она звучит так... Прочее бла-бла-бла </p><br>
+                                <header><h3>С каждым днём больше</h3></header>
+                                <p>Расскажите Вашим Друзьям, и Друзьям Друзей<br>
+                                 Больше Объявлений позволят найти лучший вариант</p><br>
                                 <a href="properties-listing.html" class="link-arrow">Подробнее</a>
                             </aside>
 							<br>
@@ -302,7 +267,7 @@
         </section><!-- /#testimonials -->
     </div>
     <!-- end Page Content -->
-	
+
         <aside id="advertising" class="block">
             <div class="container">
                 <a href="registration.html">
@@ -346,7 +311,7 @@
                                 <a href="#">mena@example.com</a>
                             </article>
                         </div><!-- /.col-sm-3 -->
-                        <div class="col-md-3 col-sm-3">						
+                        <div class="col-md-3 col-sm-3">
                             <article>
                                 <h3>Меню</h3>
                                 <ul class="list-unstyled list-links">
