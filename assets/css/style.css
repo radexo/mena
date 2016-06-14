@@ -380,6 +380,28 @@ ul.list-links li a:hover {
   color: #fff;
 }
 
+.link-underline {
+  text-decoration: none; /* Подчеркивание */
+  border-bottom: 1px dashed #A4A4A4;
+  color: #1396e2; /* Цвет ссылки */
+}
+
+.link-underline:visited {
+ text-decoration: none;
+ color: grey; /* Цвет ссылки */
+}
+.link-underline:active {
+   text-decoration: none;
+ }
+.link-underline:hover {
+    font-weight: bold; /* Жирное начертание */
+    text-decoration: none; /* Подчёркивание */
+    border-bottom: 1px dashed #A4A4A4;
+    color: #128dd4; /* Цвет ссылки */
+  }
+.link-underline:select {
+color: maroon; /* Цвет текста */
+}
 .link-icon {
   color: #2a2a2a;
 }
@@ -1338,7 +1360,7 @@ ul.list-links li a:hover {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 5px solid #3C6D8B;
+  border: 5px solid #31708f;
   display: table;
   width: 100%;
   height: 100%;
@@ -1346,7 +1368,19 @@ ul.list-links li a:hover {
   margin-bottom: 30px;
 }
 .banner:hover {
-  border-color: #d9d9d9;
+  border: 5px solid #128dd4;
+
+}
+.banner-2 {
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 5px solid #3C6D8B;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 .banner .title, .banner .submit {
   display: table-cell;
@@ -1359,11 +1393,18 @@ ul.list-links li a:hover {
   width: 70%;
 }
 .banner .submit {
-  color: #1396e2;
+  color: #128dd4;
   font-size: 18px;
   text-align: right;
   width: 30%;
 }
+.banner .submit:hover {
+  color: #23527c;
+  font-size: 18px;
+  text-align: right;
+  width: 30%;
+}
+
 .banner .submit i {
   color: #073855;
   margin-left: 10px;
@@ -1871,7 +1912,7 @@ ul.list-links li a:hover {
   padding-bottom: 10px;
 }
 .feature-box .icon {
-  background-color: #607d8b;
+  background-color: #ea4335;
   height: 60px;
   left: -2px;
   padding: 20px;
