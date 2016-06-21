@@ -29,6 +29,40 @@ xx-page-test.html: New feature testing on xx-page.html
 -----
 -----
 
+
+
+-----
+## 2016 06 20
+> mena alpha ver. 0.620
+
+###Личный кабинет
+- меню
+
+###CSS
+- кнопки, текст, оформление
+
+###Login/registration
+- коррекция полей
++ forgot-password.html
+
+### Почтовый клиент
+#### mailbox
+- mailbox-test.html >>> mailbox.html
+- коррекция полей
+- убраны теги
+
+|Планы. В ближайшее время коррекция полей Submit.html ; properties-listing-lines.html ; property-detail.html ; боковой поиск
+
+
+-----
+## 2016 06 15
+> mena alpha ver. 0.615
+
+###Шапка сайта - Все страницы
+- коррекция полей, лишний код
+- изменена кнопка регистрации и размещения объявления
+
+
 -----
 ## 2016 06 13
 > mena alpha ver. 0.613

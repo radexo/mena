@@ -1912,13 +1912,14 @@ color: maroon; /* Цвет текста */
   padding-bottom: 10px;
 }
 .feature-box .icon {
-  background-color: #ea4335;
+  background-color: #fff;
   height: 60px;
   left: -2px;
   padding: 20px;
   position: absolute;
   top: -2px;
   width: 60px;
+  border: 2px solid #d95c5c
 }
 .feature-box .icon:after {
   bottom: -8px;
@@ -1926,13 +1927,13 @@ color: maroon; /* Цвет текста */
   height: 0px;
   border-style: solid;
   border-width: 0 8px 8px 0;
-  border-color: transparent #607d8b transparent transparent;
+  border-color: transparent #d95c5c transparent transparent;
   position: absolute;
-  right: 0;
+  right: -2px;
   width: 0px;
 }
 .feature-box .icon .fa {
-  color: #fff;
+  color: #ea4335;
   font-size: 20px;
 }
 
@@ -2257,7 +2258,7 @@ color: maroon; /* Цвет текста */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .my-properties table thead tr th {
-  background-color: #073855;
+  background-color: #4285f4;
   border: none;
   color: #fff;
   padding: 10px 10px 10px 0px;
@@ -4208,6 +4209,11 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
   padding: 7px 35px 7px 35px;
   width: auto;
 }
+.btn.btn-m-5, select.btn-white {
+  font-size: 14px;
+  padding: 7px 15px 7px 15px;
+  width: auto;
+}
 
 /* Button color */
 
@@ -4323,6 +4329,18 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
   color: #A4A4A4;
   border: 1px solid #A4A4A4;
 }
+.btn.btn-white-grey-3, select.btn-white {
+  background-color: #fff;
+  color: #A4A4A4;
+  outline: none !important;
+  width: auto;
+  border: 1px solid #a4a4a4;
+}
+.btn.btn-white-grey-3:hover, select.btn-white:hover {
+  background-color: #f3f3f3;
+  color: #616161;
+  border: 1px solid #A4A4A4;
+}
 .btn.btn-white-red, select.btn-white {
   background-color: #fff;
   color: #A4A4A4;
@@ -4334,6 +4352,20 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
 }
 .btn.btn-white-red:hover, select.btn-white:hover {
   background-color: #ed5565;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn.btn-white-green, select.btn-white {
+  background-color: #fff;
+  color: #46af62;
+  border: 1px solid #46af62;
+  font-size: 12px;
+  outline: none !important;
+  padding: 5px 10px 5px 10px;
+  width: auto;
+}
+.btn.btn-white-green:hover, select.btn-white:hover {
+  background-color: #46af62;
   color: #fff;
   border: 1px solid #fff;
 }
