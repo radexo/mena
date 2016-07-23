@@ -1360,7 +1360,7 @@ color: maroon; /* Цвет текста */
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border: 5px solid #31708f;
+  border: 2px solid #f3f3f3;
   display: table;
   width: 100%;
   height: 100%;
@@ -1368,10 +1368,21 @@ color: maroon; /* Цвет текста */
   margin-bottom: 30px;
 }
 .banner:hover {
-  border: 5px solid #128dd4;
+  border: 4px solid #128dd4;
 
 }
 .banner-2 {
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 5px solid #31708f;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.banner-3 {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -1483,12 +1494,12 @@ color: maroon; /* Цвет текста */
   line-height: 1;
   text-transform: none;
   content: "\f08a";
-  color: #1396e2;
+  color: #e78183;
   font-size: 18px;
   position: relative;
 }
 .bookmark:hover:before {
-  color: #073855;
+  color: #dc6c6c;
 }
 .bookmark:hover .title-add {
   visibility: visible;
@@ -1503,7 +1514,7 @@ color: maroon; /* Цвет текста */
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   visibility: hidden;
-  color: #5a5a5a;
+  color: #cdcdcd;
   font-size: 12px;
   pointer-events: none;
   position: absolute;
@@ -1533,7 +1544,7 @@ color: maroon; /* Цвет текста */
   animation: animate-bookmark 1s;
   -webkit-animation: animate-bookmark 1s;
   content: "\f055";
-  color: #1396e2;
+  color: #00cc33;
   left: 3px;
   font-size: 14px;
   position: absolute;
@@ -2840,7 +2851,7 @@ color: maroon; /* Цвет текста */
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: #1396e2;
+  background-color: #5a5a5a;
   display: inline-block !important;
   width: 50px;
   height: 50px;
@@ -4179,6 +4190,17 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
 }
 
 /* Button size */
+
+.btn-sm-fav {
+  font-size: 16px;
+  padding: 3px 5px 0px 5px;
+  width: auto;
+}
+.btn.btn-sm-1, select.btn-white {
+font-size: 12px;
+padding: 5px 10px 5px 10px;
+width: auto;
+}
 .btn.btn-sm-2, select.btn-white {
   font-size: 12px;
   padding: 7px 25px 7px 25px;
@@ -4334,7 +4356,7 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
   color: #A4A4A4;
   outline: none !important;
   width: auto;
-  border: 1px solid #a4a4a4;
+  border: 1px solid #d2d2d2;
 }
 .btn.btn-white-grey-3:hover, select.btn-white:hover {
   background-color: #f3f3f3;
@@ -4355,6 +4377,17 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
   color: #fff;
   border: 1px solid #fff;
 }
+.btn.btn-white-red-2, select.btn-white {
+  background-color: #fff;
+  color: #e57375;
+  border: 1px solid;
+  width: auto;
+}
+.btn.btn-white-red-2:hover, select.btn-white:hover {
+  background-color: #D95C5C;
+  color: #fff;
+  border: 1px solid #fff;
+}
 .btn.btn-white-green, select.btn-white {
   background-color: #fff;
   color: #46af62;
@@ -4368,6 +4401,21 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="search"]:hover,
   background-color: #46af62;
   color: #fff;
   border: 1px solid #fff;
+}
+.btn.btn-add-new, select.btn-white {
+  background-color: #fff;
+  color: #46af62;
+  border: 1px solid #46af62;
+  font-size: 12px;
+  outline: none !important;
+  padding: 5px 10px 5px 10px;
+  width: auto;
+}
+.btn.btn-add-new:hover, select.btn-white:hover {
+  background-color: #46af62;
+  color: #020202;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px 0 #dbff00
 }
 .btn.btn-grey-dark, select.btn-grey-dark {
   background-color: #2a2a2a;
