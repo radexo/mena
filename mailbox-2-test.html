@@ -89,9 +89,9 @@
                         <ul class="sidebar-navigation">
                         <style>
                         ol {
-                          list-style-type: none; /* СТИЛЬ НУМЕРОВАННОГО СПИСКА */
+                          list-style-type: none;
                         }
-                        </style>
+                        </style>  <!-- CZ Стиль, добавить в CSS -->
                           <li class=""><a href="mailbox.html"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
                             <ol>
                                 <li class="active"><a href="mailbox-2.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
@@ -121,6 +121,47 @@
 
             <div class="col-md-3">
                 <div class="full-height-scroll">
+
+
+                  <div class="wrap-options">
+											<div class="messages-options padding-15">
+												<div class="btn-group">
+													<button class="btn btn-primary btn-wide" type="button">
+														Compose
+													</button>
+													<button class="btn btn-primary dropdown-toggle" type="button">
+														<span class="caret"></span>
+													</button>
+													<ul role="menu" class="dropdown-menu dropdown-light">
+														<li>
+															<a href="#"> <span class="title"><i class="ti-import"></i> Inbox</span> <span class="badge">10</span> </a>
+														</li>
+														<li>
+															<a href="#"> <span class="title"><i class="ti-upload"></i> Sent</span> </a>
+														</li>
+														<li>
+															<a href="#"> <span class="title"><i class="ti-na"></i> Spam</span> <span class="badge">1</span> </a>
+														</li>
+														<li>
+															<a href="#"> <span class="title"><i class="ti-star"></i> Starred</span> <span class="badge">2</span> </a>
+														</li>
+													</ul>
+												</div>
+												<button class="btn btn-transparent pull-right open-message-search">
+													<i class="ti-search"></i>
+												</button>
+												<button class="btn btn-transparent pull-right close-message-search">
+													<i class="ti-close"></i>
+												</button>
+											</div>
+											<div class="messages-search">
+												<form lpformnum="1" _lpchecked="1">
+													<input type="text" placeholder="Search messages..." class="form-control underline">
+												</form>
+											</div>
+										</div>
+
+
                     <ul class="list-group elements-list">
                         <li class="list-group-item active">
                             <a data-toggle="tab" href="#tab-1" class="unread">
@@ -162,7 +203,7 @@
                                         Looks pretty like. How about meeting?
                                     </p>
                                     <p>
-                                        <i class="fa fa-map-marker"></i> м.Проспект мира
+                                      <span class="link-arrow geo-location">м.Проспект Мира</span>
                                     </p>
                                 </div>
                             </a>
@@ -209,6 +250,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li class="list-group-item">
                             <a data-toggle="tab" href="#tab-3" class="read text-muted">
                                 <small class="pull-right text-muted"> 03.04.2016</small>
@@ -251,35 +293,37 @@
                                 </div>
                             </a>
                         </li>
-
-
                     </ul>
-
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="full-height-scroll white-bg border-left">
-
                     <div class="element-detail-box">
-
                         <div class="tab-content">
                             <div id="tab-1" class="tab-pane active">
-
-                                <div class="pull-right">
-                                    <div class="btn-group">
-                                        <button class="btn btn-white-red" title="Добавить в избранное"><i class="fa fa-heart-o"></i> </button>
-                                        <button class="btn btn-white-grey" title="В корзину"><i class="fa fa-trash-o"></i> </button>
-                                        <button class="btn btn-white-grey" title="Пожаловаться на агента"><i class="fa fa-bug" aria-hidden="true"></i>&nbsp;Пожаловаться</button>
-                                    </div>
-                                </div>
-                                <div class="small text-muted">
-                                    <i class="fa fa-clock-o"></i> Среда, 11 Мая 2016, 12:32
-                                </div>
-
-                                <h2>
-                                    Добрый день. Хотел узнать подробнее по вашей квартире
-                                </h2>
+                              <div class="mail-box-header">
+                                  <div class="pull-right">
+                                      <a href="#" class="btn btn-white-grey" title="Пожаловаться"><i class="fa fa-bug"></i> Пожаловаться</a>
+                                      <a href="#" class="btn btn-white-red-2 btn-sm-1" title="Добавить в избранное"><i class="fa fa-heart-o"></i></a>
+                                      <a href="#" class="btn btn-white-grey" title="Переименовать"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                      <a href="mailbox-2-test.html" class="btn btn-white-grey" title="Удалить"><i class="fa fa-trash-o"></i> </a>
+                                  </div>
+                                  <h3>
+                                      Заголовок, можно переименовать
+                                  </h3>
+                                  <div class="mail-tools">
+                                      <h4>
+                                        <span class="font-normal">От: </span>Сергей Бегальцев
+                                      </h4>
+                                      <h5>
+                                          <span class="pull-right font-noraml">10:15 11.05.2016</span>
+                                          <span class="font-normal">Объявление: &nbsp;</span> <a href="property-detail.html" title="Открыть объявление адресата"><i class="fa fa-map-marker"></i> ул. Шоссе Энтузиастов, д.147 </a><br>
+                                      </h5>
+                                  </div>
+                                  <hr>
+                              </div>
+                              <div>
 
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -302,14 +346,12 @@
                                     <div class="attachment">
                                         <div class="file-box">
                                             <div class="file">
-                                                <a href="#">
+                                              <a href="#" title="file-preview-image">
                                                     <div class="icon">
                                                         <i class="fa fa-file-image-o"></i>
                                                     </div>
                                                     <div class="file-name">
                                                         Photo_2015.jpg
-                                                        <br>
-                                                        <small>Добавлено: Май 11, 2016</small>
                                                     </div>
                                                 </a>
                                             </div>
@@ -317,14 +359,12 @@
                                         </div>
                                         <div class="file-box">
                                             <div class="file">
-                                                <a href="#">
+                                                <a href="#" title="file-preview-image">
                                                     <div class="icon">
                                                       <i class="fa fa-file-image-o"></i>
                                                     </div>
                                                     <div class="file-name">
                                                         Photo_2016.jpg
-                                                        <br>
-                                                        <small>Добавлено: Май 13, 2016</small>
                                                     </div>
                                                 </a>
                                             </div>
@@ -333,24 +373,39 @@
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
-
+                              </div>
                             </div>
 
                             <div id="tab-2" class="tab-pane">
-                              <div class="pull-right">
-                                  <div>
-                                      <button class="btn" title="Добавить в избранное"><i class="fa fa-heart-o"></i> </button>
-                                      <button class="btn" title="В корзину"><i class="fa fa-trash-o"></i> </button>
-                                      <button class="btn btn-grey-dark" title="Пожаловаться на агента"><i class="fa fa-bug" aria-hidden="true"></i>&nbsp;Пожаловаться</button>
+                              <div class="mail-box-header">
+                                  <div class="pull-right">
+                                      <a href="#" class="btn btn-white-grey" title="Пожаловаться"><i class="fa fa-bug"></i> Пожаловаться</a>
+                                      <div href="#" class="btn btn btn-white-red-2 btn-sm-1" title="Добавить в избранное"
+                                      <span class="actions">
+                                      <a class="bookmark" data-bookmark-state="empty"></a>
+                                      </span></div>
+                                      <a href="#" class="btn btn-white-grey" title="Переименовать"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                      <a href="mailbox-2-test.html" class="btn btn-white-grey" title="Удалить"><i class="fa fa-trash-o"></i> </a>
                                   </div>
-                              </div>
-                              <div class="small text-muted">
-                                  <i class="fa fa-clock-o"></i> Среда, 11 Мая 2016, 10:05
-                              </div>
+                                  <h3>
+                                      <-- Заголовок сообщения -->
+                                  </h3>
+                                  <div class="mail-tools">
+                                      <h4>
+                                        <span class="font-normal">От: </span> <-- ID пользователя или "отображаемое имя" -->
+                                      </h4>
+                                      <h5>
+                                          <span class="pull-right font-noraml">10:15 11.05.2016</span>
+                                          <span class="font-noraml">Объявление: &nbsp;</span> <a href="property-detail.html" title="Открыть объявление адресата"><i class="fa fa-map-marker"></i> ул. Шоссе Энтузиастов, д.147 </a><br>
+                                          <span class="font-noraml">Объявление: &nbsp;</span> <a href="property-detail.html" class="link-underline "title="Открыть объявление адресата"><i class="fa fa-map-marker"></i> ул. Шоссе Энтузиастов, д.147 </a><br>
+                                          <span class="font-noraml">Объявление: &nbsp;</span> <a href="property-detail.html" title="Открыть объявление адресата"><span class="link-underline geo-location">ул. Шоссе Энтузиастов, д.147</span></a><br>
+                                          <span class="font-noraml">Объявление: &nbsp;</span> <a href="property-detail.html" title="Открыть объявление адресата"><span class="link-arrow geo-location">ул. Шоссе Энтузиастов, д.147</span></a><br>
+                                          <span class="font-noraml">Объявление: &nbsp;</span> <a href="property-detail.html" title="Открыть объявление адресата"><span class="link-arrow geo-location"><span class="link-underline">ул. Шоссе Энтузиастов, д.147</span></span></a><br>
 
-                              <h2>
-                                  Здарова. Скинь фоток. Хачу видеть
-                              </h2>
+                                      </h5>
+                                  </div>
+                                  <hr>
+                              </div>
 
                               <p>
                                   Хачу видеть всю квартиру. Куда сам лягу. Где маленький будет спать. Панимаешь?
@@ -363,21 +418,29 @@
                             </div>
 
                             <div id="tab-3" class="tab-pane">
-                              <div class="pull-right">
-                                  <div class="btn-group">
-                                    <button class="btn btn-danger" title="Добавить в избранное"><i class="fa fa-heart-o"></i> </button>
-                                    <button class="btn" title="В корзину"><i class="fa fa-trash-o"></i> </button>
-                                    <button class="btn btn-grey-dark" title="Пожаловаться на агента"><i class="fa fa-bug" aria-hidden="true"></i>&nbsp;Пожаловаться</button>
+
+                              <div class="mail-box-header">
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-white-grey" title="Пожаловаться"><i class="fa fa-bug"></i> Пожаловаться</a>
+                                        <a href="#" class="btn btn-white-red" title="Пожаловаться"><i class="fa fa-heart-o"></i></a>
+                                        <a href="#" class="btn btn-white-grey" title="Переименовать"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                        <a href="mailbox-2-test.html" class="btn btn-white-grey" title="Удалить"><i class="fa fa-trash-o"></i> </a>
+                                    </div>
+                                  <h3>
+                                      <-- Заголовок сообщения -->
+                                  </h3>
+                                  <div class="mail-tools">
+                                      <h4>
+                                        <span class="font-normal">От: </span> <-- ID пользователя или "отображаемое имя" -->
+                                      </h4>
+                                      <h5>
+                                          <span class="pull-right font-noraml">10:15 11.05.2016</span>
+                                          <span class="font-noraml">Объявление: &nbsp;</span> <a href="property-detail.html" class="link-underline "title="Открыть объявление адресата"><i class="fa fa-map-marker"></i> ул. Шоссе Энтузиастов, д.147 </a><br>
+                                      </h5>
                                   </div>
                               </div>
-                              <div class="small text-muted">
-                                  <i class="fa fa-clock-o"></i> Воскресенье, 08 Мая 2016, 12:32
-                              </div>
 
-                              <h2>
-                                  Looks pretty good. How about meeting?
-                              </h2>
-
+                              <hr>
                               <p>
                                   Sed fringilla nibh est, sit amet consectetur justo imperdiet vel. Aliquam rhoncus, sem pulvinar facilisis elementum, nisl magna auctor massa, sodales commodo nibh nibh quis quam. Vivamus sit amet lacinia augue. Phasellus pulvinar, magna vitae posuere aliquet, ipsum neque lobortis quam, pharetra feugiat ex lectus nec lectus. Mauris ut felis eros. Quisque porta rutrum orci nec maximus. Aenean rhoncus sollicitudin semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                               </p>

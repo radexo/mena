@@ -84,24 +84,26 @@
             <!-- sidebar -->
             <div class="col-md-3 col-sm-2">
                 <section id="sidebar">
-                    <header><h2><div class="text-muted">Личный кабинет</div></h2></header>
+                    <header><h3>Личный кабинет</h3></header>
                     <aside>
                         <ul class="sidebar-navigation">
                         <style>
                         ol {
-                          list-style-type: none; /* СТИЛЬ НУМЕРОВАННОГО СПИСКА */
+                          list-style-type: none; /* ДОБАВИТЬ В CSS СТИЛЬ НУМЕРОВАННОГО СПИСКА */
                         }
                         </style>
-                            <li class=""><a href="mailbox.html"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
-                                <ol>
-                                    <li class="active"><a href="mailbox-2.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
-                                    <li><a href="mailbox-test.html"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><span>Исходящие</span></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
-                                    <li><a href="#"><i class="fa fa-trash-o"></i><span>Удалёные </a></li>
-                                </ol>
-                            </li>
-                            <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Мои объявления</span></a></li>
-                            <li><a href="profile.html"><i class="fa fa-cogs" aria-hidden="true"></i></i><span>Настройки</span></a></li>
+                          <li><a href="#"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
+                            <ol>
+                                <li class="active"><a href="mailbox.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
+                                <li><a href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><span>Исходящие</span></a></li>
+                                <li><a href="#"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
+                                <li><a href="#"><i class="fa fa-trash-o"></i><span>Удалёные </a></li>
+                            </ol>
+                          </li>
+                          <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Моё объявление</span></a></li>
+                          <li><a href="bookmarked-list.html"><i class="fa fa-list-ul" aria-hidden="true"></i></i><span>Избранные объявления</span></a></li>
+                          <li><a href="profile.html"><i class="fa fa-cogs"></i><span>Настройки</span></a></li>
+                          <li><a href="price.html" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>Оплата</a></li>
                         </ul>
                     </aside>
                 </section><!-- /#sidebar -->
@@ -113,7 +115,7 @@
                 <div class="mail-box-header">
                     <div class="pull-right">
                         <a href="mail_compose.html" class="btn btn-white2-sm" title="Ответить"><i class="fa fa-reply"></i> Ответить</a>
-                        <a href="#" class="btn btn-white-red"title="Добавить в избранное"><i class="fa fa-heart-o"></i> </a>
+                        <a href="#" class="btn btn-white-red-2 btn-sm-1"title="Добавить в избранное"><i class="fa fa-heart-o"></i> </a>
                         <a href="mailbox.html" class="btn btn-white-grey" title="Удалить"><i class="fa fa-trash-o"></i> </a>
                         <a href="#" class="btn btn-white-grey" title="Пожаловаться"><i class="fa fa-bug"></i> </a>
                     </div>
@@ -132,8 +134,6 @@
                 </div>
                 <hr>
                     <div class="mail-box">
-
-
                     <div class="mail-body">
                             <p>
                             Добрый день.
@@ -176,11 +176,10 @@
                             </div>
                             <div class="mail-body text-right">
                                     <a class="btn btn-white2" href="mail_compose.html"><i class="fa fa-reply"></i>&nbsp; Ответить на сообщение</a>
-                                    <a class="btn btn-white-grey" href="#"><i class="fa fa-arrow-right"></i> Заключить сделку</a>
+                                    <a class="btn btn-white-grey" href="#"><i class="fa fa-arrow-right"></i> Сделать сделку</a>
                             </div>
                           </br>
                             <div class="clearfix"></div>
-
                     </div>
                 </div>
                 <!-- end Message -->

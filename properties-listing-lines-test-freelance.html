@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Theme">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/angular.rangeSlider.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/angular.rangeSlider.sm.css" type="text/css">
+    <title>Mena | Properties Listing</title>
+
+</head>
+
+<body class="page-sub-page page-listing-lines page-search-results" id="page-top" ng-app="mainApp" ng-controller="mainController">
+<!-- Wrapper -->
+<div class="wrapper">
+    <!-- Navigation -->
+    <div class="navigation">
+        <div class="secondary-navigation">
+            <div class="container">
+                <div class="user-area">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <header class="navbar" id="top" role="banner">
+                <div class="navbar-header">
+                    <div class="navbar-brand nav" id="brand">
+                        <a href="#"> <img src="assets/img/logo.png" alt="asd" title="asd"></a>
+                    </div>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="has-child"><a href="#" title="Основное личное меню пользователя"><i class="fa fa-user fa-fw"></i>&nbsp;Личный кабинет</a>
+                            <ul class="child-navigation">
+                              <li><a href="mailbox.html" title="повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Почта &nbsp;<span class="label label-danger pull-right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
+								                <li><a href="my-properties.html" title="Проверить"><i class="fa fa-th-list"></i>&nbsp; Список</a></li>
+								                <li><a href="profile.html" title="Настройки"><i class="fa fa-cogs"></i>&nbsp; Настройки</a>
+                                <li><a href="index.html" title="Обязательно зайдите завтра"><i class="fa fa-sign-out"></i>&nbsp;Выход</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav><!-- /.navbar collapse-->
+            </header><!-- /.navbar -->
+        </div><!-- /.container -->
+    </div><!-- /.navigation -->
+
+    <!-- Page Content -->
+    <div id="page-content">
+        <!-- Breadcrumb -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Главная</a></li>
+                <li class="active">Результаты поиска</li>
+            </ol>
+        </div>
+        <!-- end Breadcrumb -->
+
+        <div class="container">
+            <div class="row">
+                <!-- Results -->
+                <div class="col-md-9 col-sm-9">
+                    <section id="results">
+                        <header><h1>Предложения по вашему запросу</h1></header>
+                        <section id="search-filter">
+                            <figure><h3><i class="fa fa-search"></i>Результатов поиска:</h3>
+                                <span class="search-count">28</span>
+                                <div class="sorting">
+                                    <div class="form-group">
+                                        <select name="sorting">
+                                            <option value="">Сортировать</option>
+                                            <option value="1">По цене убывания</option>
+                                            <option value="2">По метражу</option>
+                                            <option value="3">По дате добавления</option>
+                                        </select>
+                                    </div><!-- /.form-group -->
+                                </div>
+                            </figure>
+                        </section>
+                        <section id="properties" class="display-lines">
+                            <div class="property">
+                                <figure class="type"><a href="#" class="btn btn-white-red-2 btn-sm-fav" title="Добавить в избранное"><i class="fa fa-heart-o"></i> </a></figure>
+								                <div class="property-image">
+                                    <a href="property-detail.html">
+                                        <img alt="" src="assets/img/properties/property-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <header>
+                                        <a href="property-detail.html"><h3>1х комнатная</h3></a>  <!-- CZ индивидуальная ссылка объявления -->
+                                        <figure>м.Шоссе Энтузиастов; ул.Шоссе Энтузиастов, 147</figure>
+                                    </header>
+                                    <div class="tag price">380 000 рублей</div>
+                                    <aside>
+                                        <p>
+										                    Лоджия 6кв + курилка. Выполнен отличный ремонт, 1 собственник, более 3-х лет.
+                                        </p>
+                                        <dl>
+                                            <dt>Этаж:</dt>
+                                                <dd>2/9</dd>
+                                            <dt>Площадь:</dt>
+                                                <dd>50 м<sup>2</sup></dd>
+                                            <dt>Жилая:</dt>
+                                                <dd>29 м<sup>2</sup></dd>
+                                            <dt>Кухня:</dt>
+                                                <dd>9 м<sup>2</sup></dd>
+                                        </dl>
+                                    </aside>
+                                    <a href="property-detail.html" class="link-arrow">Подробнее</a><!-- /.open-button -->
+                                </div>
+                            </div><!-- /.property -->
+
+                            <div class="property">
+                            <span class="actions pull-right">
+                                <!--<a href="#" class="fa fa-print"></a>-->
+                                <a href="#" class="bookmark" data-bookmark-state="empty"><span class="title-add">В избранное</span><span class="title-added">Добавлено</span></a>
+                            </span>
+
+                                <div class="property-image">
+                                    <a href="property-detail.html">
+                                        <img alt="" src="assets/img/properties/property-01.jpg">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <header>
+                                        <a href="property-detail.html"><h3>2х комнатная</h3></a>  <!-- CZ индивидуальная ссылка объявления -->
+                                        <figure>м.Шоссе Энтузиастов; ул.Шоссе Энтузиастов, 147</figure>
+                                    </header>
+                                    <div class="tag price">580 000 рублей</div>
+                                    <aside>
+									                      <dl>
+                                            <dt>Этаж:</dt>
+                                                <dd>2/9</dd>
+                                            <dt>Площадь:</dt>
+                                                <dd>70 м<sup>2</sup></dd>
+                                            <dt>Жилая:</dt>
+                                                <dd>49 м<sup>2</sup></dd>
+                                            <dt>Кухня:</dt>
+                                                <dd>9 м<sup>2</sup></dd>
+                                        </dl>
+                                        <p>
+										                    Лоджия 6кв + курилка. Выполнен отличный ремонт, 1 собственник, более 3-х лет.
+                                        </p>
+                      							</aside>
+                                    <a href="property-detail.html" class="link-arrow">Подробнее</a><!-- /.open-button -->
+                                </div>
+                            </div><!-- /.property -->
+
+                            <!-- Pagination -->
+                            <div class="center">
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul><!-- /.pagination-->
+                            </div><!-- /.center-->
+                        </section><!-- /#properties-->
+                    </section><!-- /#results -->
+                </div><!-- /.col-md-9 -->
+                <!-- end Results -->
+
+
+                <!-- sidebar -->
+                <div class="col-md-3 col-sm-3">
+                    <section id="sidebar">
+                        <aside id="edit-search">
+                            <header><h3>Поиск</h3></header>
+                            <form role="form" id="form-sidebar" class="form-search" action="properties-listing.html">
+                                <div class="form-group" style="display:none">
+                                    <select name="status">
+										                    <option value="0">Продажа</option>
+                                        <option value="1">Съём</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+                                <div class="form-group">
+                                    <select name="city">
+                                        <option value="">Город</option>
+                                        <option value="1">Все города</option>
+                                        <option value="2">Москва</option>
+                                        <option value="3">Московская область</option>
+                                        <option value="4">Новая Москва</option>
+
+                                    </select>
+                                </div><!-- /.form-group -->
+                                <div class="form-group">
+                                    <select name="district">
+                                        <option value="">Округ</option>
+										                    <option value="0" data-city="2">Все округа</option>
+                                        <option value="1" data-city="2">ЦАО</option>
+                                        <option value="2" data-city="2">ЗАО</option>
+                                        <option value="3" data-city="2">ЮАО</option>
+                                        <option value="4" data-city="2">ВАО</option>
+                                        <option value="5" data-city="2">САО</option>
+
+                                         <option value="6" data-city="3 4">Все районы</option>
+
+                                    </select>
+                                </div><!-- /.form-group -->
+                                <div class="form-group">
+                                    <select name="property-type">
+                                        <option value="">Тип жилья</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Комната</option>
+                                        <option value="3">Частный дом</option>
+                                        <option value="4">Новостройки</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+								                <div class="form-group">
+                                    <select name="room" multiple="multiple">
+                                        <option value="">Кол-во комнат</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4+</option>
+                                        <option value="5">Студия</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+                                <div class="slider">
+                                    <span style="font-weight:bold" >Площадь</span>
+                                    <div range-slider min="0" attach-handle-values="true" max="200" model-min="range.min" model-max="range.max"></div>
+                                    <div style="margin:.5em; display:table;">
+                                        <div class="slider-control">
+                                            <span>От:</span>
+                                            <input style="height:25px" type="number" class="" name="rangeMin" ng-model="range.min">
+                                            <label>м2</label>
+                                        </div>
+                                        <div class="slider-control">
+                                            <span>До:</span>
+                                            <input type="number" class="" name="rangeMax" ng-model="range.max">
+                                            <label>м2</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="form-group">
+                                    <div class="btn-group bootstrap-select">
+                                        <button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Площадь" aria-expanded="true">
+                                            <span class="filter-option pull-left">Площадь</span>&nbsp;<span class="caret"></span>
+                                        </button>
+
+                                    </div>
+                                </div>-->
+								                <!--<div class="form-group">
+                                    <select name="area">
+                                        <option value="">Площадь</option>
+                                        <option value="1">30-70 +</option>
+                                        <option value="2">70-90 +</option>
+                                        <option value="3">90-110 +</option>
+                                        <option value="4">110 +</option>
+                                    </select>
+                                </div>--><!-- /.form-group -->
+								                        <p>Дополнительные критерии</P>
+								                <div class="form-group">
+                                    <select name="form-sale-area">
+                                        <option value="">Критерии</option>
+                                        <option value="1">Критерий 1</option>
+                                        <option value="2">Критерий 2</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+								                <div class="form-group">
+                                    <select name="form-sale-area">
+                                        <option value="">Критерий</option>
+                                        <option value="1">Критерий 1</option>
+                                        <option value="2">Критерий 2</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Искать</button>
+                                </div><!-- /.form-group -->
+                            </form><!-- /#form-map -->
+                        </aside><!-- /#edit-search -->
+                    </section><!-- /#sidebar -->
+                </div><!-- /.col-md-3 -->
+                <!-- end Sidebar -->
+
+
+
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
+    <!-- end Page Content -->
+    <!-- Page Footer -->
+    <footer id="page-footer">
+        <div class="inner">
+            <aside id="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <article>
+                                <h3>Информация</h3>
+                                <p>Дополнительная информация по сайту<br>
+								можно дать список популярный станций метро в пару столбиков<br>
+								или другую необходимую SEO информацию
+                                </p>
+                                <hr>
+                                <a href="#" class="link-arrow">продолжить</a>
+                            </article>
+                        </div><!-- /.col-sm-6 -->
+                        <div class="col-md-3 col-sm-3">
+                            <article>
+                                <h3>Контакты</h3>
+                                <address>
+                                    <strong>Mena</strong><br>
+                                    физический адрес<br>
+                                    юридический адрес
+                                </address>
+                                +7 (999) 123-4567<br>
+								+7 (999) 123-4566<br>
+                                <a href="#">mena@example.com</a>
+                            </article>
+                        </div><!-- /.col-sm-3 -->
+                        <div class="col-md-3 col-sm-3">
+                            <article>
+                                <h3>Меню</h3>
+                                <ul class="list-unstyled list-links">
+                                    <li><a href="#">Карта сайта</a></li>
+                                    <li><a href="#">Поиск по карте</a></li>
+                                    <li><a href="#">Спецпредложения</a></li>
+                                    <li><a href="#">Честный обмен</a></li>
+                                    <li><a href="#">Подбор ипотеки</a></li>
+                                </ul>
+                            </article>
+                        </div><!-- /.col-sm-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </aside><!-- /#footer-main -->
+            <aside id="footer-thumbnails" class="footer-thumbnails"></aside><!-- /#footer-thumbnails -->
+            <aside id="footer-copyright">
+                <div class="container">
+                    <span>"@" Copyright © 2016. All Rights Reserved.</span>
+                    <span class="pull-right"><a href="#page-top" class="roll"><i class="fa fa-arrow-up">&nbsp; на верх</i></a></span>
+                </div>
+            </aside>
+        </div><!-- /.inner -->
+    </footer>
+    <!-- end Page Footer -->
+</div>
+
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jshashtable-2.1_src.js"></script>
+<script type="text/javascript" src="assets/js/jquery.numberformatter-1.2.3.js"></script>
+<script type="text/javascript" src="assets/js/tmpl.js"></script>
+<script type="text/javascript" src="assets/js/jquery.dependClass-0.1.js"></script>
+<script type="text/javascript" src="assets/js/draggable-0.1.js"></script>
+<script type="text/javascript" src="assets/js/jquery.slider.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/sm.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular.rangeSlider.js"></script>
+<script>angular.module("mainApp", ["ui-rangeSlider"]).controller("mainController", function ($scope) {
+    $scope.range = { min: 20, max: 100 };
+});</script>
+<!--[if gt IE 8]>
+<script type="text/javascript" src="assets/js/ie.js"></script>
+<![endif]-->
+
+</body>
+</html>

@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="assets/css/jquery.slider.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/fileinput.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    <title>Mena | My Properties</title>
+    <title>Mena | Profile</title>
 
 </head>
 
-<body class="page-sub-page page-my-properties page-account" id="page-top">
+<body class="page-sub-page page-profile page-account" id="page-top">
 <!-- Wrapper -->
 <div class="wrapper">
     <!-- Navigation -->
@@ -73,7 +74,7 @@
             <ol class="breadcrumb">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="#">Аккаунт</a></li>
-                <li class="active">Избранное список</li>
+                <li class="active">Настройки</li>
             </ol>
         </div>
         <!-- end Breadcrumb -->
@@ -91,18 +92,28 @@
                           list-style-type: none; /* ДОБАВИТЬ В CSS СТИЛЬ НУМЕРОВАННОГО СПИСКА */
                         }
                         </style>
-                          <li><a href="#"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
+                          <li><a href="mailbox.html"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
                             <ol>
-                                <li><a href="mailbox.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
+                                <li><a href="mailbox-2.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
                                 <li><a href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><span>Исходящие</span></a></li>
                                 <li><a href="#"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
                                 <li><a href="#"><i class="fa fa-trash-o"></i><span>Удалёные </a></li>
                             </ol>
                           </li>
-                          <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Моё объявление</span></a></li>
-                          <li class="active"><a href="bookmarked-list.html"><i class="fa fa-list-ul" aria-hidden="true"></i></i><span>Избранные объявления</span></a></li>
-                          <li><a href="profile.html"><i class="fa fa-cogs"></i><span>Настройки</span></a></li>
-                          <li><a href="price.html" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>Оплата</a></li>
+                          <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Объявления</span></a>
+                            <ol>
+                              <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Мои объявления</span></a>
+                              <li><a href="bookmarked.html"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
+                              <li><a href="bookmarked-list.html"><i class="fa fa-list-ul" aria-hidden="true"></i></i><span>Избранное список</span></a></li>
+                            </ol>
+                          </li>
+                          <li><a href="#"><i class="fa fa-cogs"></i><span>Настройки</span></a>
+                            <ol>
+                              <li class="active"><a href="profile.html"><i class="fa fa-cog"></i><span>Мои настройки</span></a></li>
+                              <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i><span>Уведомления</span></a></li>
+                              <li><a href="price.html" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>&nbsp; Оплата</a></li>
+                            </ol>
+                          </li>
                         </ul>
                     </aside>
                 </section><!-- /#sidebar -->
@@ -110,83 +121,90 @@
             <!-- end Sidebar -->
                 <!-- My Properties -->
                 <div class="col-md-9 col-sm-10">
-                    <section id="my-properties">
-                        <header><h1>Избранные объявления списком</h1></header>
-                        <div class="my-properties">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Объявление</th>
-                                        <th></th>
-                                        <th>Дата добавления</th>
-                                        <th>Действие</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-04.jpg"></a>
-                                        </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>2х комн., м.Фили</h2></a>
-                                            <figure>ул. Большая Филёвская, 18</figure>
-                                            <div class="tag price">3 800 000</div>
+                    <section id="profile">
+                        <header><h1>Персональные настройки</h1></header>
+                        <div class="account-profile">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12">
+                                    <form role="form" id="form-account-profile" method="post" >
+                                        <section id="contact">
+
+                                          <div class="row">
+                                            <div class="col-md-3 col-sm-3">
+                                              <div class="checkbox switch" id="agent-switch" data-agent-state="is-agent" required>
+                                                <label>
+                                                <input type="checkbox">
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-9 col-sm-9">
+                                            <section id="agency">
+                                              <div class="form-group">
+                                                <div class="input-group">
+                                                  <span class="input-group-addon"><i class="fa fa-rub"></i></span>
+                                                  <input type="text" class="form-control" id="submit-price" name="price" pattern="\d*">
+                                                </div>
+                                              </div><!-- /.form-group -->
+                                            </section>
+                                            </div>
+                                          </div>
+
+                                            <h3>Контакты</h3>
+                                            <dl class="contact-fields">
+                                                <dt><label for="form-account-name">Ваше имя:</label></dt>
+                                                <dd><div class="form-group">
+                                                    <input type="text" class="form-control" id="form-account-name" name="form-account-name" required placeholder="Сергей Усачёв">
+                                                </div><!-- /.form-group --></dd>
+                                                <dt><label for="form-account-name">Отображаемое имя:</label></dt>
+                                                <dd><div class="form-group">
+                                                    <input type="text" class="form-control" id="form-account-name" name="form-account-name" required placeholder="Сергей">
+                                                </div><!-- /.form-group --></dd>
+                                                <dt><label for="form-account-phone">Номер телефона:</label></dt>
+                                                <dd><div class="form-group">
+                                                    <input type="text" class="form-control" id="form-account-phone" name="form-account-phone" placeholder="+7(123) 456 7890">
+                                                </div><!-- /.form-group --></dd>
+                                                <dt><label for="form-account-email">Email:</label></dt>
+                                                <dd><div class="form-group">
+                                                    <input type="text" class="form-control" id="form-account-email" name="form-account-phone" placeholder="mail@pochta.ru">
+                                                </div><!-- /.form-group --></dd>
+                                            </dl>
+                                        </section>
+                                    </form><!-- /#form-contact -->
+									<div class="block clearfix">
+									<section id="change-password">
+                                        <header><h2>Изменить пароль</h2></header>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <form role="form" id="form-account-password" method="post" >
+                                                    <div class="form-group">
+                                                        <label for="form-account-password-current">Текущий пароль</label>
+                                                        <input type="password" class="form-control" id="form-account-password-current" name="form-account-password-current">
+                                                    </div><!-- /.form-group -->
+                                                    <div class="form-group">
+                                                        <label for="form-account-password-new">Новый пароль</label>
+                                                        <input type="password" class="form-control" id="form-account-password-new" name="form-account-password-new">
+                                                    </div><!-- /.form-group -->
+                                                    <div class="form-group">
+                                                        <label for="form-account-password-confirm-new">Подтверждение пароля</label>
+                                                        <input type="password" class="form-control" id="form-account-password-confirm-new" name="form-account-password-confirm-new">
+                                                    </div><!-- /.form-group -->
+                                                    <div class="form-group clearfix">
+                                                        <button type="submit" class="btn btn-default" id="form-account-password-submit">Изменить пароль</button>
+                                                    </div><!-- /.form-group -->
+                                                </form><!-- /#form-account-password -->
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <strong>Совет:</strong>
+                                                <p>Желательно использовать не менее 8 символов с большими буквами.
+                                                </p>
+                                            </div>
                                         </div>
-                                        </td>
-                                        <td>20.01.2016</td>
-                                        <td class="actions">
-                                            <a href="#" class="edit"><i class="fa fa-external-link" title="Открыть объявление"></i>Открыть</a>
-                                            <a href="#"><i class="delete fa fa-trash-o" title="Удалить объявление"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-02.jpg"></a>
-                                        </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>2х комн., м.Шоссе Энтузиастов</h2></a>
-                                            <figure>ул.Шоссе Энтузиастов, 147</figure>
-                                            <div class="tag price">8 380 000</div>
-                                        </div>
-                                        </td>
-                                        <td>06.02.2016</td>
-                                        <td class="actions">
-                                          <a href="#" class="edit"><i class="fa fa-external-link" title="Открыть объявление"></i>Открыть</a>
-                                            <a href="#"><i class="delete fa fa-trash-o" title="Удалить объявление"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="image">
-                                            <a href="property-detail.html"><img alt="" src="assets/img/properties/property-01.jpg"></a>
-                                        </td>
-                                        <td><div class="inner">
-                                            <a href="property-detail.html"><h2>2х комн., м.Шоссе Энтузиастов</h2></a>
-                                            <figure>ул.Шоссе Энтузиастов, 147</figure>
-                                            <div class="tag price">9 000 000</div>
-                                        </div>
-                                        </td>
-                                        <td>29.01.2016</td>
-                                        <td class="actions">
-                                          <a href="#" class="edit"><i class="fa fa-external-link" title="Открыть объявление"></i>Открыть</a>
-                                            <a href="#"><i class="delete fa fa-trash-o" title="Удалить объявление"></i></a>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div><!-- /.table-responsive -->
-                            <!-- Pagination -->
-                            <div class="center">
-                                <ul class="pagination">
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                </ul><!-- /.pagination-->
-                            </div><!-- /.center-->
-                        </div><!-- /.my-properties -->
-                    </section><!-- /#my-properties -->
+                                    </section>
+									</div>
+                                </div><!-- /.col-md-9 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.account-profile -->
+                    </section><!-- /#profile -->
                 </div><!-- /.col-md-9 -->
                 <!-- end My Properties -->
             </div><!-- /.row -->
@@ -254,8 +272,12 @@
 <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
 <script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/fileinput.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <!--[if gt IE 8]>
 <script type="text/javascript" src="assets/js/ie.js"></script>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ThemeStarz">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jquery.slider.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/fileinput.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <title>Mena | Add Your Property</title>
+
+</head>
+
+<body class="page-sub-page page-submit" id="page-top">
+<!-- Wrapper -->
+<div class="wrapper">
+    <!-- Navigation -->
+    <div class="navigation">
+        <div class="secondary-navigation">
+            <div class="container">
+                <div class="contact">
+                    <figure><strong>Тел.:</strong>+7 999-123-4567</figure>
+                    <figure><strong>Email:</strong>mena@yandex.ru</figure>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <header class="navbar" id="top" role="banner">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand nav" id="brand">
+                        <a href="#"> <img src="assets/img/logo.png" alt="Менахаус" title="Менахаус"></a>
+                    </div>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li class="has-child"><a href="#" title="Основное личное меню пользователя"><i class="fa fa-user fa-fw"></i>&nbsp;Личный кабинет</a>
+                            <ul class="child-navigation">
+                              <li><a href="mailbox.html" title="Проверить новые сообщения, вам должно повезти" class="list-group-item"><i class="fa fa-envelope-o"></i>&nbsp; Сообщения мне &nbsp;<span class="label label-danger pull-right">14</span></a></li> <!-- CZ кол-во сообщений выводится из базы -->
+								                <li><a href="my-properties.html" title="Проверить и добавить новое объявление"><i class="fa fa-th-list"></i>&nbsp; Мои объявления</a></li>
+								                <li><a href="profile.html" title="Настройки пользователя и сайта"><i class="fa fa-cogs"></i>&nbsp; Настройки</a>
+                                <li><a href="index.html" title="Обязательно зайдите завтра проверить новые сообщения!"><i class="fa fa-sign-out"></i>&nbsp;Выход</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav><!-- /.navbar collapse-->
+            </header><!-- /.navbar -->
+        </div><!-- /.container -->
+    </div><!-- /.navigation -->
+    <!-- end Navigation -->
+    <!-- Page Content -->
+    <div id="page-content">
+        <!-- Breadcrumb -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Главная</a></li>
+                <li class="active">Добавить объявление</li>
+            </ol>
+        </div>
+        <!-- end Breadcrumb -->
+
+        <div class="container">
+            <header><h1>Добавить новое объявление</h1></header>
+            <form role="form" id="form-submit" class="form-submit" action="thank-you.html">
+                <div class="row">
+                        <div class="col-md-9 col-sm-9">
+                            <section id="submit-form">
+                                <section id="basic-information">
+                                    <header><h2>Карточка объекта</h2></header>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label for="submit-title">Заголовок</label>
+                                                <input type="text" class="form-control" id="submit-title" name="title" placeholder="Введите заголовок видимый только Вам" required>
+                                            </div><!-- /.form-group -->
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="submit-description">Описание</label>
+                                        <textarea class="form-control" id="submit-description" rows="8" name="submit-description" placeholder="Краткое описание объекта"></textarea>
+                                    </div><!-- /.form-group -->
+                                </section><!-- /#basic-information -->
+
+                                <section id="basic-information">
+                                    <div class="row">
+                                        <div class="block clearfix">
+                                            <div class="col-md-6 col-sm-6">
+                                                <section id="summary">
+                                                    <header><h2>Подробности</h2></header>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="submit-property-type">Тип жилья</label>
+                                                                <select name="property-type" id="submit-property-type">
+                                                                    <option value="" style="display:none">Тип жилья</option>
+																	                                  <option value="1" id="Komnata">Квартира</option>
+																	                                  <option value="2" id="Kvartira">Комната</option>
+																	                                  <option value="3" id="Dom">Частный дом</option>
+																	                                  <option value="4" id="Novostroyka">Новостройки</option>
+                                                                </select>
+                                                            </div><!-- /.form-group -->
+                                                        </div><!-- /.col-md-6 -->
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-room">Количество комнат</label>
+                                                                <select name="room" id="submit-room" required>
+                                                                  <option value="">Кол-во комнат</option>
+                                                                    <option value="1" id="1room">1</option>
+                                                                    <option value="2" id="2rooms">2</option>
+                                                                    <option value="3" id="3rooms">3</option>
+                                                                    <option value="4" id="4rooms">4+</option>
+                                                                    <option value="5" id="Studio">Студия</option>
+                                                                </select>
+															                              </div>
+                                                        </div><!-- /.col-md-6 -->
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-roof">Высота потолков</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="submit-roof" name="roof" pattern="\d*">
+                                                                    <span class="input-group-addon">м</span>
+                                                                </div>
+                                                            </div><!-- /.form-group -->
+                                                        </div><!-- /.col-md-6 -->
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-roof">Ваш этаж</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="submit-roof" name="roof" pattern="\d*">
+                                                                    <span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div><!-- /.form-group -->
+                                                        </div><!-- /.col-md-6 -->
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-roof">Этажность дома</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="submit-roof" name="roof" pattern="\d*">
+                                                                    <span class="input-group-addon"><i class="fa fa-building" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div><!-- /.form-group -->
+                                                        </div><!-- /.col-md-6 -->
+                                                    </div><!-- /.row -->
+													                          </br>
+													                          <h3> Площадь: </h3> <p>Как узнать площадь</p>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-area">Общая</label>
+																                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="submit-area" name="Area" pattern="\d*" required>
+                                                                    <span class="input-group-addon">м<sup>2</sup></span>
+																                                </div>
+                                                           </div><!-- /.form-group -->
+                                                        </div><!-- /.col-md-6 -->
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-beds">Жилая</label>
+																                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="submit-Beds" name="Beds" pattern="\d*" required>
+                                                                    <span class="input-group-addon">м<sup>2</sup></span>
+																                                </div>
+															                              </div><!-- /.form-group -->
+                                                        </div><!-- /.col-md-6 -->
+                                                    </div><!-- /.row -->
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-kitchen">Кухня</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="submit-kitchen" name="Kitchen" pattern="\d*" required>
+                                                                    <span class="input-group-addon">м<sup>2</sup></span>
+                                                                </div>
+                                                            </div><!-- /.form-group -->
+                                                        </div><!-- /.col-md-6 -->
+                                                        <div class="col-md-6 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="submit-Baths">Сан. узел</label>
+                                                                <select name="type" id="submit-Baths">
+                                                                    <option value="1">Совмещенный</option>
+                                                                    <option value="2">Раздельный</option>
+                                                                    <option value="3">Два и более</option>
+                                                                </select>
+															                               </div>
+                                                        </div><!-- /.col-md-6 -->
+													                          </div> <!-- /.row -->
+												                        </section><!-- /#summary -->
+                                            </div><!-- /.col-md-6 -->
+                                            <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <section id="place-on-map">
+                                                    <header class="section-title">
+                                                        <h2>На карте</h2>
+                                                    </header>
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label for="submit-location">Местоположение</label>
+                                                            <select name="city" id="submit-location">
+                                                              <option value="">Город</option>
+                                                              <option value="1" style="display:none">Все города</option>
+                                                              <option value="2">Москва</option>
+                                                              <option value="3">Московская область</option>
+                                                              <option value="4">Новая Москва</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label for="submit-district">Округ/район</label>
+                                                            <select name="district" id="submit-district">
+                                                                  <option value="">Округ</option>
+                                                                  <option value="" data-city="2" style="display:none">Все округа</option>
+                                                                  <option value="1" data-city="2">Центральный</option>
+                                                                  <option value="2" data-city="2">Северный</option>
+                                                                  <option value="3" data-city="2">Северо-Восточный</option>
+                                                                  <option value="4" data-city="2">Восточный</option>
+                                                                  <option value="5" data-city="2">Юго-Восточный</option>
+                                                                  <option value="6" data-city="2">Южный</option>
+                                                                  <option value="7" data-city="2">Юго-Западный</option>
+                                                                  <option value="8" data-city="2">Западный</option>
+                                                                  <option value="9" data-city="2">Северо-Западный</option>
+                                                                  <option value="10" data-city="2">Зеленоградский</option>
+                                                                  <option value="11" data-city="3">Все районы</option>
+                                                                  <option value="12" data-city="4">Новомосковский</option>
+                                                                  <option value="13" data-city="4">Троицкий</option>
+                                                                </select>
+                                                            </div><!-- /.form-group -->
+                                                        </div>
+                                                        <div class="col-md-12 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="address-map">Адрес</label>
+                                                        <input type="text" class="form-control" id="address-map" name="address" placeholder="Введите адрес в свободной форме" required>
+                                                    </div><!-- /.form-group -->
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">
+                                                            <div class="form-group">
+                                                              <iframe src="https://static-maps.yandex.ru/1.x/?ll=37.620070,55.753630&spn=0.003,0.003& \
+&size=393,320&z=13&l=map&pt=37.620070,55.753630,pmwtm1" width="100%" height="320" frameborder="0"></iframe>
+                                                            </div><!-- /.form-group -->
+                                                        </div>
+                                                    </div>
+                                                </section><!-- /#place-on-map -->
+                                            </div><!-- /.col-md-6 -->
+                                          </div>
+                                        </div><!-- /.block -->
+                                    </div><!-- /.row -->
+                                </section>
+                                <hr>
+                            </section>
+                        </div><!-- /.col-md-9 -->
+                        <div class="col-md-3 col-sm-3">
+						                </br>
+                            <aside class="submit-step">
+                                <figure class="step-number">1</figure>
+                                <div class="description">
+                                    <h4>Укажите информацию по объекту</h4>
+                                    <p>Укажите точную информацию о вашей квартире или доме в полном соответствии с действительностью. Будьте внимательны. Все объявления проверяются модераторами вручную!
+                                    </p>
+                                </div>
+                            </aside><!-- /.submit-step -->
+                        </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+                <div class="row">
+                    <div class="block clearfix">
+                        <div class="col-md-9 col-sm-9">
+                            <section id="submit-form">
+                                    <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+												                        <section id="wish-list">
+												                        <header><h2>Желаемая цель обмена</h2></header>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="form-group">
+                                                            <label for="submit-status">Статус</label>
+                                                            <select name="type" id="submit-status" required>
+                                                                <option value="1">Обмен</option>
+                                                                <option value="2">Обмен продажа</option>
+                                                            </select>
+                                                        </div><!-- /.form-group -->
+                                                    </div><!-- /.col-md-6 -->
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="submit-status">Цель обмена</label>
+                                                            <select name="type" id="submit-status">
+                                                                <option value="1">На увеличение</option>
+                                                                <option value="2">На уменьшение</option>
+                                                            </select>
+															                          </div>
+                                                    </div><!-- /.col-md-6 -->
+                                                    <div class="col-md-6 col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="submit-status">Местоположение</label>
+                                                            <select name="type" id="submit-status">
+                                                                <option value="1">В том же районе</option>
+                                                                <option value="2">В другом районе</option>
+                                                            </select>
+															                          </div>
+                                                    </div><!-- /.col-md-6 -->
+														<div class="col-md-12 col-sm-12">
+															<div class="form-group">
+																<label for="submit-price">Предположительная цена объекта</label><i class="fa fa-question-circle" title="Мы можем помочь в определении рыночной цены объекта"></i>
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-rub"></i></span>
+																	<input type="text" class="form-control" id="submit-price" name="price" pattern="\d*">
+																</div>
+															</div><!-- /.form-group -->
+														</div>
+                                                    </div><!-- /.row -->
+
+													<div>
+														<label for="account-agency">
+														Обмен с доплатой <i class="fa fa-question-circle " title="Укажите если хотите получить денежную доплату при обмене"></i></label>
+													</div>
+													<div class="row">
+														<div class="col-md-3 col-xs-3">
+															<div class="checkbox switch" id="agent-switch" data-agent-state="is-agent">
+																<label>
+																<input type="checkbox">
+																</label>
+															</div>
+														</div>
+														<div class="col-md-9 col-xs-9">
+														<section id="agency" class="disabled">
+															<div class="form-group">
+																<div class="input-group">
+																	<span class="input-group-addon"><i class="fa fa-rub"></i></span>
+																	<input type="text" class="form-control" id="submit-price" name="price" pattern="\d*">
+																</div>
+															</div><!-- /.form-group -->
+														</section>
+														</div>
+													</div>
+
+                                                </section><!-- /#wish-list -->
+                                            </div><!-- /.col-md-6 -->
+                                    </div><!-- /.row -->
+							<hr>
+                            </section>
+                        </div><!-- /.col-md-9 -->
+                        <div class="col-md-3 col-sm-3">
+						</br>
+                            <aside class="submit-step">
+                                <figure class="step-number">2</figure>
+                                <div class="description">
+                                    <h4>Укажите информацию по объекту</h4>
+                                    <p>Укажите точную информацию о вашей квартире или доме в полном соответствии с действительностью. Будьте внимательны. Все объявления проверяются модераторами вручную!
+                                    </p>
+                                </div>
+                            </aside><!-- /.submit-step -->
+                        </div><!-- /.col-md-3 -->
+                    </div>
+                </div><!-- /.row -->
+                <div class="row">
+                    <div class="block clearfix">
+                        <div class="col-md-9 col-sm-9">
+                            <section id="submit-form">
+                                <section class="block" id="gallery">
+                                    <header><h2>Фотографии</h2></header>
+                                    <div class="center">
+                                        <div class="form-group">
+                                            <input id="file-upload" type="file" class="file" multiple="true" data-show-upload="false" data-show-caption="false" data-show-remove="false" accept="image/jpeg,image/png" data-browse-class="btn btn-white2" data-browse-label="Загрузить изображения">
+                                            <figure class="note"><strong>Совет:</strong>Загрузите фотографии вашего жилья в формате jpeg или png!</figure>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div><!-- /.col-md-9 -->
+                        <div class="col-md-3 col-sm-3">
+						</br></br>
+                            <aside class="submit-step">
+                                <figure class="step-number">3</figure>
+                                <div class="description">
+                                    <h4>Загрузите фотографии</h4>
+                                    <p>Загрузите несколько красивых фотографий вашего объекта, чтобы составить хорошее впечатление
+                                    </p>
+                                </div>
+                            </aside><!-- /.submit-step -->
+                        </div><!-- /.col-md-3 -->
+                    </div>
+                </div><!-- /.row -->
+
+                <div class="row">
+                    <div class="block">
+                        <div class="col-md-9 col-sm-9">
+                            <div class="center">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success large">Отправить данные</button>
+                                </div><!-- /.form-group -->
+                                <figure class="note block">Нажимая кнопку “Отправить данные” Вы подтверждаете, что уведомлены и согласны с <a href="terms-conditions.html">Правилами нашего сайта</a></figure>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <aside class="submit-step">
+                                <figure class="step-number">4</figure>
+                                <div class="description">
+                                    <h4>Проверьте информацию и нажмите "Отправить"</h4>
+                                    <p>Проверьте введённую Вами информацию и только после этого нажмите продолжить.
+                                    </p>
+                                </div>
+                            </aside><!-- /.submit-step -->
+                        </div><!-- /.col-md-3 -->
+                    </div>
+                </div>
+            </form><!-- /#form-submit -->
+        </div><!-- /.container -->
+    </div>
+    <!-- end Page Content -->
+    <!-- Page Footer -->
+    <footer id="page-footer">
+        <div class="inner">
+            <aside id="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <article>
+                                <h3>Информация</h3>
+                                <p>Дополнительная информация по сайту<br>
+								можно дать список популярный станций метро в пару столбиков<br>
+								или другую необходимую SEO информацию
+                                </p>
+                                <hr>
+                                <a href="#" class="link-arrow">продолжить</a>
+                            </article>
+                        </div><!-- /.col-sm-6 -->
+                        <div class="col-md-3 col-sm-3">
+                            <article>
+                                <h3>Контакты</h3>
+                                <address>
+                                    <strong>Mena</strong><br>
+                                    физический адрес<br>
+                                    юридический адрес
+                                </address>
+                                +7 (999) 123-4567<br>
+								+7 (999) 123-4566<br>
+                                <a href="#">mena@example.com</a>
+                            </article>
+                        </div><!-- /.col-sm-3 -->
+                        <div class="col-md-3 col-sm-3">
+                            <article>
+                                <h3>Меню</h3>
+                                <ul class="list-unstyled list-links">
+                                    <li><a href="#">Карта сайта</a></li>
+                                    <li><a href="#">Поиск по карте</a></li>
+                                    <li><a href="#">Спецпредложения</a></li>
+                                    <li><a href="#">Честный обмен</a></li>
+                                    <li><a href="#">Подбор ипотеки</a></li>
+                                </ul>
+                            </article>
+                        </div><!-- /.col-sm-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </aside><!-- /#footer-main -->
+            <aside id="footer-thumbnails" class="footer-thumbnails"></aside><!-- /#footer-thumbnails -->
+            <aside id="footer-copyright">
+                <div class="container">
+                    <span>RADEXO Copyright © 2015. All Rights Reserved.</span>
+                    <span class="pull-right"><a href="#page-top" class="roll"><i class="fa fa-arrow-up">&nbsp; вернуться</i></a></span>
+                </div>
+            </aside>
+        </div><!-- /.inner -->
+    </footer>
+    <!-- end Page Footer -->
+</div>
+
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
+<script type="text/javascript" src="assets/js/markerwithlabel_packed.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
+<script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="assets/js/fileinput.min.js"></script>
+<script type="text/javascript" src="assets/js/custom-map.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/sm.js"></script>
+
+
+<!--[if gt IE 8]>
+<script type="text/javascript" src="assets/js/ie.js"></script>
+<![endif]-->
+
+
+</body>
+</html>

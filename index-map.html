@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Тестирование карт</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" /></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+
+<body ng-app="mainApp" ng-controller="mainController" style="padding: 2em; color: #fff; background: #313131">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+            <div class="form-group">
+                <label for="example">Введите адрес:</label>
+                <input type="text" class="form-control" id="example" placeholder="Введите адрес" ng-model="model.mainVal" ng-keyup="change()">
+            </div>
+
+            <div style="padding: 1em;">
+                <div id="map" style="padding: 1em; width: 100%; height: 500px">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div style="font-size: 1.1em; text-decoration: underline">Результат поиска (нажми для отметки на карте):</div>
+            <div ng-repeat="elem in data" ng-click="set(elem.value)" style="cursor: pointer">{{elem.value}}</div>
+        </div>
+    </div>
+    <script>
+        angular.module("mainApp", []).controller("mainController", function($scope) {
+            var model = {
+                mainVal: ""
+            };
+
+            ymaps.ready(init);
+            var myMap;
+
+            function init() {
+                myMap = new ymaps.Map('map', {
+                    center: [55.76, 37.64], // Москва
+                    zoom: 13
+                });
+
+            }
+
+            $scope.set = function(val) {
+                var resourse = ymaps.geocode(val);
+                resourse.then(
+                    function(res) {
+                        var a = res.geoObjects.get(0).geometry.getCoordinates();
+
+                        myMap.geoObjects.each(function(obj) {
+                            myMap.geoObjects.remove(obj);
+                        })
+                        myMap.setCenter(a);
+
+                        myPlacemark = new ymaps.Placemark(a, {
+                            balloonContentHeader: val,
+                        });
+
+                        myMap.geoObjects.add(myPlacemark);
+                    },
+                    function(err) {
+                        // обработка ошибки
+                    }
+                );
+            }
+
+            $scope.model = model;
+            $scope.data = [];
+            $scope.change = function() {
+                ymaps.suggest(model.mainVal, {
+                    results: 10
+                }).then(function(items) {
+                    $scope.data = [];
+
+                    for (var i = 0; i < items.length; i++) {
+                        $scope.data.push(items[i]);
+                    }
+
+                    $scope.$apply();
+                });
+
+            }
+        });
+    </script>
+
+
+</body>
+
+
+</html>
