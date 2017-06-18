@@ -26,39 +26,25 @@
     <div class="navigation">
         <div class="secondary-navigation">
             <div class="container">
-                <div class="contact">
+                <div class="contact" style="display:none">
                     <figure><strong>Тел.:</strong>+7 999-123-4567</figure>
                     <figure><strong>Email:</strong>mena@yandex.ru</figure>
-                </div>
-                <div class="user-area">
-                    <div class="actions">
-                        <a href="registration.html" title="Пройти быструю регистрацию и разместить объявление своей квартиры бесплатно!" class="promoted"><strong>Разместить объявление</strong></a>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <header class="navbar" id="top" role="banner">
                 <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
                     <div class="navbar-brand nav" id="brand">
                         <a href="#"> <img src="assets/img/logo.png" alt="Менахаус" title="Менахаус"></a>
                     </div>
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
                     <ul class="nav navbar-nav">
-					    <li class="activ"><a href="sign-in.html" title="Войти на сайт или пройти быструю регистрацию"><strong>&nbsp;Войти</strong></a>
-						</li>
+                        <li><a href="sign-in.html" title="Войти на сайт или пройти быструю регистрацию" style="margin-top: -3px; margin-right: 15px"><p><i class="fa fa-sign-in" aria-hidden="true">&nbsp; Войти </i></p></a></li>
+                        <a href="registration.html" class="btn btn-white-green" title="Разместить объявление своей квартиры бесплатно!"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Разместить объявление</a>
                     </ul>
                 </nav><!-- /.navbar collapse-->
-                <div class="add-your-property">
-                    <a href="registration.html" class="btn btn-green" title="Разместить объявление своей квартиры бесплатно!"><i class="fa fa-plus"></i><span class="text">Разместить объявление</span></a>
-                </div>
             </header><!-- /.navbar -->
         </div><!-- /.container -->
     </div><!-- /.navigation -->
@@ -71,7 +57,7 @@
                 <div class="container">
                     <div class="overlay">
                         <div class="info">
-                            <div class="tag title-action">цена всего 11,000,000</div>
+                            <div class="tag price">цена всего 11,000,000</div>
                             <h3>H3 Важный заголовок</h3>
 							<h4>H4 Крутой текст</h4>
                             <figure>Подзаголовок</figure>
@@ -86,7 +72,7 @@
                 <div class="container">
                     <div class="overlay">
                         <div class="info">
-                            <div class="tag title-action">площадь 186 м^2</div>
+                            <div class="tag price">площадь 186 м^2</div>
                             <h3>H3 Важный заголовок</h3>
                             <figure>Подзаголовок</figure>
                         </div>
@@ -100,7 +86,7 @@
                 <div class="container">
                     <div class="overlay">
                         <div class="info">
-                            <div class="tag title-action">только 3 дня!</div>
+                            <div class="tag price">только 3 дня!</div>
                             <h3>H3 Важный заголовок</h3>
                             <figure>Подзаголовок</figure>
                         </div>
@@ -121,59 +107,56 @@
                 <div class="search-box map">
 					<form role="form" id="form-map-sale" class="form-map form-search clearfix">
 					</br>
-          <div class="row">
-            <div class="col-md-1">
-            </div>
-              <div class="col-md-3 col-sm-4">
-                  <div class="form-group">
-                      <select name="form-sale-city">
-                          <option value="1">Москва</option>
-                          <option value="2">Новая Москва</option>
-                          <option value="3">Московская область</option>
-                      </select>
-                  </div><!-- /.form-group -->
-              </div>
-              <div class="col-md-4 col-sm-4">
-                  <div class="form-group">
-                      <select name="form-sale-property-type">
-                          <option value="">Тип жилья</option>
-                          <option value="1">Квартира</option>
-                          <option value="2">Комната</option>
-                          <option value="3">Частный дом</option>
-                      </select>
-                  </div><!-- /.form-group -->
-              </div>
-              <div class="col-md-3 col-sm-4">
-                  <div class="form-group">
-                      <button type="submit" class="btn btn-default">Искать</button>
-                  </div><!-- /.form-group -->
-              </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4 col-md-offset-1">
+                                <div class="form-group">
+                                    <select name="form-sale-city">
+                                        <option value="1">Москва</option>
+                                        <option value="2">Новая Москва</option>
+                                        <option value="3">Московская область</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="form-group">
+                                    <select name="form-sale-property-type">
+                                        <option value="">Тип жилья</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Комната</option>
+                                        <option value="3">Частный дом</option>
+                                        <option value="4">Новостройки</option>
+                                    </select>
+                                </div><!-- /.form-group -->
+                            </div>
+                            <div class="col-md-3 col-sm-4">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Искать</button>
+                                </div><!-- /.form-group -->
+                            </div>
 							<div class="col-md-12 col-sm-12">
 								<hr>
 							</div>
-              <div class="col-md-1">
-              </div>
-							<div class="col-md-3 col-sm-4">
+							<div class="col-md-3 col-sm-4 col-md-offset-1">
 								<article>
 									<ul class="list-unstyled list-links">
-										<li><a href="properties-listing-lines.html" align="center">Однокомнатные квартиры - 192</a></li>
-										<li><a href="properties-listing-lines.html"align="center">Двухкомнатные квартиры - 98</a></li>
+										<li><p><a href="properties-listing-lines.html" align="center">Однокомнатные квартиры - 192</a></p></li>
+										<li><p><a href="properties-listing-lines.html" align="center">Двухкомнатные квартиры - 98</a></p></li>
 									</ul>
 								</article>
 							</div><!-- /.col-sm-3 -->
 							<div class="col-md-4 col-sm-4">
 								<article>
 									<ul class="list-unstyled list-links">
-										<li><a href="properties-listing-lines.html"align="center">Трехкомнатные квартиры - 67</a></li>
-										<li><a href="properties-listing-lines.html"align="center">Четыре и более комнат - 12</a></li>
+										<li><p><a href="properties-listing-lines.html" align="center">Трехкомнатные квартиры - 67</a></p></li>
+                    <li><p><a href="properties-listing-lines.html" align="center">Четыре и более комнат - 12</a></p></li>
 									</ul>
 								</article>
 							</div><!-- /.col-sm-3 -->
 							<div class="col-md-3 col-sm-4">
 								<article>
 									<ul class="list-unstyled list-links">
-										<li><a href="properties-listing-lines.html"align="center">Частные дома - 35</a></li>
-										<li><a href="properties-listing-lines.html"align="center">Новостройки - (скоро)</a></li>
+										<li><p><a href="properties-listing-lines.html" align="center">Частные дома - 35</a></p></li>
+                    <li><p><a href="properties-listing-lines.html" align="center">Комнаты - 101</a></p></li>
 									</ul>
 								</article>
 							</div><!-- /.col-sm-3 -->
@@ -190,81 +173,49 @@
 
     <!-- Page Content -->
     <div id="page-content">
-        <section id="our-services" class="block">
-            <div class="container">
-                <div class="row">
-					          <br>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-bug" aria-hidden="true"></i></figure>
-                            <aside class="description">
-                                <header><h3>Безопасно</h3></header>
-                                <p>Без риэлторов, посредников и прочих! <br>
-                                  Вы общаетесь исключительно с собственниками напрямую</p><br>
-                                <a href="properties-listing.html" class="link-arrow">Подробнее</a>
-							</aside>
-							<br>
-                        </div><!-- /.feature-box -->
-                    </div><!-- /.col-md-4 -->
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></figure>
-                            <aside class="description">
-                                <header><h3>Самостоятельно</h3></header>
-                                <p>Нашли, посмотрели, договорились. Мы поможем со всеми документами Без переплат и скрытых условий!</p><br>
-                                <a href="properties-listing.html" class="link-arrow">Подробнее</a>
-                            </aside>
-							<br>
-                        </div><!-- /.feature-box -->
-                    </div><!-- /.col-md-4 -->
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-users" aria-hidden="true"></i></figure>
-                            <aside class="description">
-                                <header><h3>С каждым днём больше</h3></header>
-                                <p>Расскажите Вашим Друзьям, и Друзьям Друзей<br>
-                                 Больше Объявлений позволят найти лучший вариант</p><br>
-                                <a href="properties-listing.html" class="link-arrow">Подробнее</a>
-                            </aside>
-							<br>
-                        </div><!-- /.feature-box -->
-                    </div><!-- /.col-md-4 -->
-                </div><!-- /.row -->
-				<br><br><br>
-            </div><!-- /.container -->
-        </section><!-- /#our-services -->
-
-
-        <section id="testimonials" class="block">
-            <div class="container">
-                <header class="section-title"><h2>Отзывы</h2></header>
-                <div class="owl-carousel testimonials-carousel">
-                    <blockquote class="testimonial">
-                        <figure>
-                            <div class="image">
-                                <img alt="" src="assets/img/client-01.jpg">
-                            </div>
-                        </figure>
-                        <aside class="cite">
-                            <p>Бла-бла-бла Я молодой и энергичный человек. Это мега крутой сайт, он мне помог и всё было очень живенько и круто. Спасибо!</p>
-                            <footer>Настоящий человек</footer>
-                        </aside>
-                    </blockquote>
-                    <blockquote class="testimonial">
-                        <figure>
-                            <div class="image">
-                                <img alt="" src="assets/img/client-01.jpg">
-                            </div>
-                        </figure>
-                        <aside class="cite">
-                            <p>Я старый и сворливый человек. Мне ничего не нравится и всё раздражает. Обменял свою квартиру в центре на окраину, сэкономил уйму времени и денег.</p>
-                            <footer>Настоящий человек старший</footer>
-                        </aside>
-                    </blockquote>
-                </div><!-- /.testimonials-carousel -->
-            </div><!-- /.container -->
-			<br><br><br><br><br>
-        </section><!-- /#testimonials -->
+      <section id="our-services" class="block">
+          <div class="container">
+              <div class="row">
+                  <br>
+                  <div class="col-md-4 col-sm-4">
+                      <div class="feature-box equal-height">
+                          <figure class="icon"><i class="fa fa-bug" aria-hidden="true"></i></figure>
+                          <aside class="description">
+                              <header><h3>Безопасно</h3></header>
+                              <p>Без риэлторов, посредников и прочих! <br>
+                                Вы общаетесь исключительно с собственниками напрямую</p><br>
+                              <a href="properties-listing.html" class="link-arrow">Подробнее</a>
+            </aside>
+            <br>
+                      </div><!-- /.feature-box -->
+                  </div><!-- /.col-md-4 -->
+                  <div class="col-md-4 col-sm-4">
+                      <div class="feature-box equal-height">
+                          <figure class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></figure>
+                          <aside class="description">
+                              <header><h3>Самостоятельно</h3></header>
+                              <p>Нашли, посмотрели, договорились. Мы поможем со всеми документами Без переплат и скрытых условий!</p><br>
+                              <a href="properties-listing.html" class="link-arrow">Подробнее</a>
+                          </aside>
+            <br>
+                      </div><!-- /.feature-box -->
+                  </div><!-- /.col-md-4 -->
+                  <div class="col-md-4 col-sm-4">
+                      <div class="feature-box equal-height">
+                          <figure class="icon"><i class="fa fa-users" aria-hidden="true"></i></figure>
+                          <aside class="description">
+                              <header><h3>С каждым днём больше</h3></header>
+                              <p>Расскажите Вашим Друзьям, и Друзьям Друзей<br>
+                               Больше Объявлений позволят найти лучший вариант</p><br>
+                              <a href="properties-listing.html" class="link-arrow">Подробнее</a>
+                          </aside>
+            <br>
+                      </div><!-- /.feature-box -->
+                  </div><!-- /.col-md-4 -->
+              </div><!-- /.row -->
+      <br><br><br>
+          </div><!-- /.container -->
+      </section><!-- /#our-services -->
     </div>
     <!-- end Page Content -->
 
@@ -273,8 +224,8 @@
                 <a href="registration.html">
                     <div class="banner">
                         <div class="wrapper">
-                            <span class="title">Попробуйте, месяц бесплатно!</span>
-                            <span class="submit">Присоединиться! <i class="fa fa-plus-square"></i></span>
+                            <span class="title">Первый месяц абсолютно бесплатно!</span>
+                            <span class="submit">Присоединиться сейчас &nbsp;<i class="fa fa-plus-square" aria-hidden="true"></i></span>
                         </div>
                     </div><!-- /.banner-->
                 </a>

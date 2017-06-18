@@ -31,11 +31,6 @@
                     <figure><strong>Тел.:</strong>+7 999-123-4567</figure>
                     <figure><strong>Email:</strong>mena@yandex.ru</figure>
                 </div>
-                <div class="user-area">
-                    <div class="actions">
-                        <a href="submit.html" title="Разместить объявление своей квартиры бесплатно!" class="promoted"><strong>Разместить объявление</strong></a>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="container">
@@ -92,28 +87,18 @@
                           list-style-type: none; /* ДОБАВИТЬ В CSS СТИЛЬ НУМЕРОВАННОГО СПИСКА */
                         }
                         </style>
-                          <li><a href="mailbox.html"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
+                          <li><a href="#"><i class="fa fa-envelope-o"></i><span>Сообщения</span></a>
                             <ol>
-                                <li><a href="mailbox-2.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
+                                <li><a href="mailbox.html"><i class="fa fa-inbox"></i><span>Входящие</span></a></li>
                                 <li><a href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><span>Исходящие</span></a></li>
                                 <li><a href="#"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
                                 <li><a href="#"><i class="fa fa-trash-o"></i><span>Удалёные </a></li>
                             </ol>
                           </li>
-                          <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Объявления</span></a>
-                            <ol>
-                              <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Мои объявления</span></a>
-                              <li><a href="bookmarked.html"><i class="fa fa-heart-o"></i><span>Избранное</span></a></li>
-                              <li><a href="bookmarked-list.html"><i class="fa fa-list-ul" aria-hidden="true"></i></i><span>Избранное список</span></a></li>
-                            </ol>
-                          </li>
-                          <li><a href="#"><i class="fa fa-cogs"></i><span>Настройки</span></a>
-                            <ol>
-                              <li class="active"><a href="profile.html"><i class="fa fa-cog"></i><span>Мои настройки</span></a></li>
-                              <li><a href="#"><i class="fa fa-volume-up" aria-hidden="true"></i><span>Уведомления</span></a></li>
-                              <li><a href="price.html" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>&nbsp; Оплата</a></li>
-                            </ol>
-                          </li>
+                          <li><a href="my-properties.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Моё объявление</span></a></li>
+                          <li><a href="bookmarked-list.html"><i class="fa fa-list-ul" aria-hidden="true"></i></i><span>Избранные объявления</span></a></li>
+                          <li class="active"><a href="profile.html"><i class="fa fa-cogs"></i><span>Настройки</span></a></li>
+                          <li><a href="price.html" title="Активировать дополнительные функции сайта"><i class="fa fa-rub"></i>Оплата</a></li>
                         </ul>
                     </aside>
                 </section><!-- /#sidebar -->
@@ -125,78 +110,45 @@
                         <header><h1>Персональные настройки</h1></header>
                         <div class="account-profile">
                             <div class="row">
-                                <div class="col-md-3 col-sm-3">
-                                    <img alt="" class="image" src="assets/img/agent-01.jpg">
-									<div class="center">
-										<div class="form-group">
-                                            <input id="file-upload" type="file" class="file" multiple="true" data-show-upload="false" data-show-caption="false" data-show-remove="false" accept="image/jpeg,image/png" data-browse-class="btn btn-default-small" data-browse-label="Выбрать файл">
-                                            <figure class="note"><strong>Совет: </strong>Загрузите изображение формата jpeg или png!</figure>
-										</div>
-									</div>
-                                </div>
-                                <div class="col-md-9 col-sm-9">
+                                <div class="col-md-9 col-sm-12">
                                     <form role="form" id="form-account-profile" method="post" >
                                         <section id="contact">
-                                            <h3>Контакты</h3>
-                                            <dl class="contact-fields">
-                                                <dt><label for="form-account-name">Ваше имя:</label></dt>
-                                                <dd><div class="form-group">
-                                                    <input type="text" class="form-control" id="form-account-name" name="form-account-name" required value="Сергей Усачёв">
-                                                </div><!-- /.form-group --></dd>
-                                                <dt><label for="form-account-phone">Номер телефона:</label></dt>
-                                                <dd><div class="form-group">
-                                                    <input type="text" class="form-control" id="form-account-phone" name="form-account-phone" value="+7(123) 456 7890">
-                                                </div><!-- /.form-group --></dd>
-                                                <dt><label for="form-account-email">Email:</label></dt>
-                                                <dd><div class="form-group">
-                                                    <input type="text" class="form-control" id="form-account-email" name="form-account-phone" value="mail@pochta.ru">
-                                                </div><!-- /.form-group --></dd>
-                                            </dl>
+
+                                            <h2><i class="fa fa-info" aria-hidden="true"></i> &nbsp; Контактные данные</h2>
+                                            <div class="row">
+                                                <div class="col-md-9 col-sm-12">
+                                                    <form role="form" class="contact-fields" id="form-contact-fields" method="post" >
+                                                        <div class="form-group">
+                                                            <label for="form-account-name">Ваше имя</label>
+                                                            <input type="name" class="form-control" id="form-account-name" name="form-account-name" required placeholder="Сергей Усачёв">
+                                                        </div><!-- /.form-group -->
+                                                        <div class="form-group">
+                                                            <label for="form-account-phone">Номер телефона:</label>
+                                                            <input type="phone" class="form-control" id="form-account-phone" name="form-account-phone" required placeholder="+7(123) 456 7890">
+                                                        </div><!-- /.form-group -->
+                                                        <div class="form-group">
+                                                            <label for="form-account-email">Email:</label>
+                                                            <input type="e-mail" class="form-control" id="form-account-email" name="form-account-phone" required placeholder="mail@pochta.ru">
+                                                        </div><!-- /.form-group -->
+                                                        <div class="form-group clearfix">
+                                                            <button type="submit" class="btn btn-m-5 btn-white-grey-3 pull-right" id="form-contact-fields-submit">Изменить данные</button>
+                                                        </div><!-- /.form-group -->
+                                                    </form><!-- /#form-account-password -->
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <strong>Совет:</strong>
+                                                    <p>Укажите реальные контактные данные. Только актуальность информации даст положительный эффект.
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </section>
-                                        <section id="about-me">
-                                            <h3>Краткая информация</h3>
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="form-contact-agent-message" rows="5" name="form-contact-agent-message">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui vestibulum, bibendum purus sit amet, vulputate mauris. Ut adipiscing gravida tincidunt. Duis euismod placerat rhoncus.
-Phasellus mollis imperdiet placerat. Sed ac turpis nisl. Mauris at ante mauris. Aliquam posuere fermentum lorem, a aliquam mauris rutrum.</textarea>
-                                            </div><!-- /.form-group -->
-                                        </section>
-                                        <section id="social">
-                                            <h3>Социальные сети</h3>
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-vk"></i></span>
-                                                    <input type="text" class="form-control" id="account-social-vk" name="account-social-vk">
-                                                </div>
-                                            </div><!-- /.form-group -->
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-odnoklassniki"></i></span>
-                                                    <input type="text" class="form-control" id="account-social-odnoklassniki" name="account-social-odnoklassniki">
-                                                </div>
-                                            </div><!-- /.form-group -->
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
-                                                    <input type="text" class="form-control" id="account-social-facebook" name="account-social-facebook">
-                                                </div>
-                                            </div><!-- /.form-group -->
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
-                                                    <input type="text" class="form-control" id="account-social-twitter" name="account-social-twitter" >
-                                                </div>
-                                            </div><!-- /.form-group -->
-                                            <div class="form-group clearfix">
-                                                <button type="submit" class="btn pull-right btn-default" id="account-submit">Сохранить</button>
-                                            </div><!-- /.form-group -->
-                                        </section>
+                                        <br><br><br>
                                     </form><!-- /#form-contact -->
 									<div class="block clearfix">
 									<section id="change-password">
-                                        <header><h2>Изменить пароль</h2></header>
+                                        <header><h2><i class="fa fa-lock" aria-hidden="true"></i> &nbsp; Безопасность</h2></header>
                                         <div class="row">
-                                            <div class="col-md-6 col-sm-6">
+                                            <div class="col-md-9 col-sm-12">
                                                 <form role="form" id="form-account-password" method="post" >
                                                     <div class="form-group">
                                                         <label for="form-account-password-current">Текущий пароль</label>
@@ -211,14 +163,13 @@ Phasellus mollis imperdiet placerat. Sed ac turpis nisl. Mauris at ante mauris. 
                                                         <input type="password" class="form-control" id="form-account-password-confirm-new" name="form-account-password-confirm-new">
                                                     </div><!-- /.form-group -->
                                                     <div class="form-group clearfix">
-                                                        <button type="submit" class="btn btn-default" id="form-account-password-submit">Изменить пароль</button>
+                                                        <button type="submit" class="btn btn-m-5 btn-white-grey-3 pull-right" id="form-account-password-submit">Изменить пароль</button>
                                                     </div><!-- /.form-group -->
                                                 </form><!-- /#form-account-password -->
                                             </div>
-                                            <div class="col-md-6 col-sm-6">
+                                            <div class="col-md-3">
                                                 <strong>Совет:</strong>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dui
-                                                    vestibulum, bibendum purus sit amet, vulputate mauris.
+                                                <p>Желательно использовать не менее 8 символов с большими буквами.
                                                 </p>
                                             </div>
                                         </div>
